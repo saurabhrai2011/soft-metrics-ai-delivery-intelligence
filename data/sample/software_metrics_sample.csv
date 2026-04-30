@@ -1,0 +1,9 @@
+domain,team,epic_id,status,lead_time_days,cycle_time_days,wait_time_days,throughput,incident_count,defect_count,mttr_hours,commitment_target,commitment_actual
+Customer Assurance,CA Team A,EPIC-101,Done,12,6,3,8,1,2,4,10,9
+Customer Assurance,CA Team B,EPIC-102,Ready for Build,18,9,7,6,2,3,6,10,7
+Fulfilment,FUL Team A,EPIC-201,Ready for Build,25,13,12,4,3,5,12,10,5
+Fulfilment,FUL Team B,EPIC-202,Ready for SIT,22,11,10,5,2,4,10,10,6
+Supply Chain,SC Team A,EPIC-301,In Progress,20,10,8,5,1,3,8,10,6
+Supply Chain,SC Team B,EPIC-302,Ready for Build,24,12,11,4,2,5,11,10,5
+Platform,PLAT Team A,EPIC-401,Done,10,5,2,9,1,1,3,10,10
+Digital,DIG Team A,EPIC-501,Done,14,7,4,7,1,2,5,10,8

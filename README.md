@@ -12,3 +12,31 @@ AI-powered delivery intelligence assistant that transforms software metrics into
 /tests - unit, integration, and evaluation tests
 /evals - golden questions and scorecards
 /demo - screenshots, walkthrough script, and sample questions
+
+## Current MVP Implementation
+
+This MVP implements a simplified vertical slice of the target architecture:
+
+- CSV-based sample dataset
+- Pandas-based metrics service
+- Rule-based question planner
+- Evidence builder with citation IDs
+- Deterministic answer generator
+- Citation validator
+- Streamlit UI
+- Basic evaluation case
+
+## Deferred from Target Architecture
+
+The following architecture components are documented but deferred from the MVP:
+
+- DuckDB
+- Postgres
+- FastAPI API Gateway
+- React frontend
+- Celery ingestion workers
+- Jira and GitHub connectors
+- pgvector semantic retrieval
+- LLM provider abstraction
+- RBAC and audit logging
+- OpenTelemetry tracing
