@@ -37,20 +37,20 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
 	st.metric(
-    	"Average Lead Time",
-    	f"{health_df['avg_lead_time_days'].mean():.1f} days",
+		"Average Lead Time",
+		f"{health_df['avg_lead_time_days'].mean():.1f} days",
 	)
 
 with col2:
 	st.metric(
-    	"Average Wait Time",
-    	f"{health_df['avg_wait_time_days'].mean():.1f} days",
+		"Average Wait Time",
+		f"{health_df['avg_wait_time_days'].mean():.1f} days",
 	)
 
 with col3:
 	st.metric(
-    	"Average Commitment Reliability",
-    	f"{health_df['commitment_reliability_pct'].mean():.1f}%",
+		"Average Commitment Reliability",
+		f"{health_df['commitment_reliability_pct'].mean():.1f}%",
 	)
 
 st.subheader("Domain Health")
@@ -87,12 +87,12 @@ if st.button("Generate Answer"):
 	st.subheader("Answer")
 	st.write(result["answer"])
 
-	st.subheader("Query Plan")
+	st.subheader("Agent Trace")
+	st.json(result["agent_trace"])
+
+	st.subheader("Selected Plan")
 	st.json(result["plan"])
 
 	st.subheader("Evidence")
 	for item in result["evidence"]:
 		st.markdown(f"**[{item['id']}]** {item['text']}")
-
-	st.subheader("Citation Validation")
-	st.json(result["citation_check"])
