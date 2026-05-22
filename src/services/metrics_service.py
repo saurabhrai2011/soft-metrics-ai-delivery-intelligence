@@ -1,7 +1,8 @@
 import pandas as pd
 from pathlib import Path
 
-DATA_PATH = Path("data/sample/software_metrics_sample.csv")
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DATA_PATH = PROJECT_ROOT / "data" / "sample" / "software_metrics_sample.csv"
 
 
 def load_metrics_data() -> pd.DataFrame:
