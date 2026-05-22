@@ -1,0 +1,93 @@
+capability_id,capability_name,initiative_id,owner,start_date,planned_end_date,actual_end_date,status,completion_pct
+CAP-0001,Activation Pipeline,INIT-001,D. Singh,2025-09-16,2026-01-25,2026-01-29,At Risk,66
+CAP-0002,Diagnostics Service,INIT-001,S. Rai,2025-08-17,2025-12-18,2025-12-08,In Progress,39
+CAP-0003,Routing Service,INIT-001,J. Chen,2025-09-22,2026-02-16,2026-02-16,At Risk,68
+CAP-0004,Inventory Insights,INIT-001,S. Rai,2025-08-19,2025-11-19,2025-12-02,In Progress,88
+CAP-0005,Notification Console,INIT-001,R. Kumar,2025-09-19,2026-02-08,2026-02-05,At Risk,40
+CAP-0006,Order Console,INIT-002,J. Chen,2025-04-10,2025-09-14,2025-09-05,Done,84
+CAP-0007,Inventory Pipeline,INIT-002,S. Rai,2025-02-24,2025-06-11,2025-06-20,Done,82
+CAP-0008,Order Gateway,INIT-002,R. Kumar,2025-06-03,2025-09-17,2025-09-29,In Progress,27
+CAP-0009,API Gateway Replatform,INIT-002,J. Chen,2025-02-15,2025-07-18,2025-07-21,At Risk,36
+CAP-0010,Routing Insights,INIT-002,D. Singh,2025-04-16,2025-07-06,2025-07-03,In Progress,89
+CAP-0011,Notification Pipeline,INIT-002,L. Nguyen,2025-05-07,2025-08-14,2025-08-13,At Risk,86
+CAP-0012,Provisioning Pipeline,INIT-003,L. Nguyen,2025-02-21,2025-04-30,2025-05-20,In Progress,95
+CAP-0013,Telemetry Pipeline,INIT-003,S. Rai,2025-04-09,2025-07-06,2025-08-01,In Progress,100
+CAP-0014,Order Pipeline,INIT-003,S. Rai,2025-02-01,2025-07-26,2025-09-16,Done,29
+CAP-0015,Telemetry Pipeline,INIT-003,P. Wong,2025-02-28,2025-07-23,2025-09-04,In Progress,89
+CAP-0016,Activation Insights,INIT-003,P. Wong,2025-02-24,2025-08-03,2025-09-20,At Risk,44
+CAP-0017,Provisioning Gateway,INIT-003,L. Nguyen,2025-04-18,2025-08-11,2025-09-14,At Risk,72
+CAP-0018,Settlement Platform,INIT-004,J. Chen,2025-09-10,2026-01-31,2026-02-20,In Progress,71
+CAP-0019,API Connector,INIT-004,A. Johnson,2025-09-26,2026-03-15,2026-03-02,In Progress,88
+CAP-0020,Partner Service,INIT-004,A. Johnson,2025-08-09,2025-10-31,2025-10-28,In Progress,76
+CAP-0021,Notification Gateway,INIT-004,S. Rai,2025-06-22,2025-11-12,2025-12-03,In Progress,50
+CAP-0022,Activation Orchestrator,INIT-004,D. Singh,2025-08-17,2025-12-16,2025-12-10,In Progress,41
+CAP-0023,Customer Platform,INIT-004,P. Wong,2025-08-04,2025-11-05,2025-11-17,Done,74
+CAP-0024,API Insights,INIT-005,S. Rai,2025-03-01,2025-05-24,2025-05-21,In Progress,60
+CAP-0025,Order Platform,INIT-005,M. Patel,2025-04-25,2025-08-24,2025-08-27,In Progress,85
+CAP-0026,Provisioning Service,INIT-005,A. Johnson,2025-02-18,2025-07-04,2025-06-22,At Risk,35
+CAP-0027,Inventory Pipeline,INIT-005,J. Chen,2025-04-25,2025-09-08,2025-08-26,At Risk,94
+CAP-0028,Inventory Connector,INIT-005,L. Nguyen,2025-06-09,2025-09-10,2025-09-05,In Progress,53
+CAP-0029,Customer Service,INIT-005,L. Nguyen,2025-05-06,2025-09-25,2025-09-21,In Progress,21
+CAP-0030,Partner Gateway,INIT-005,R. Kumar,2025-02-19,2025-06-27,2025-06-21,In Progress,64
+CAP-0031,Provisioning Pipeline,INIT-005,R. Kumar,2025-03-29,2025-07-03,2025-06-27,In Progress,90
+CAP-0032,Routing Gateway,INIT-006,J. Chen,2025-07-26,2026-01-14,2026-01-02,In Progress,90
+CAP-0033,Activation Console,INIT-006,L. Nguyen,2025-05-03,2025-09-17,2025-09-10,In Progress,53
+CAP-0034,Telemetry Insights,INIT-006,S. Rai,2025-04-29,2025-10-21,2025-11-12,In Progress,74
+CAP-0035,Settlement Console,INIT-006,M. Patel,2025-04-02,2025-06-01,2025-05-31,Done,40
+CAP-0036,API Insights,INIT-006,S. Rai,2025-06-06,2025-11-03,2025-11-04,In Progress,29
+CAP-0037,Activation Platform,INIT-007,M. Patel,2025-09-18,2026-01-03,2026-01-07,At Risk,36
+CAP-0038,Order Console,INIT-007,S. Rai,2025-07-20,2026-01-11,2026-02-03,Done,46
+CAP-0039,Routing Pipeline,INIT-007,D. Singh,2025-08-28,2025-11-09,2025-11-08,In Progress,50
+CAP-0040,Settlement Service,INIT-007,D. Singh,2025-09-14,2026-02-24,2026-02-14,In Progress,42
+CAP-0041,API Connector,INIT-007,A. Johnson,2025-09-12,2026-03-10,2026-03-10,Done,40
+CAP-0042,Notification Gateway,INIT-007,P. Wong,2025-07-22,2026-01-09,2025-12-24,In Progress,45
+CAP-0043,Settlement Insights,INIT-007,A. Johnson,2025-07-18,2025-10-25,2025-11-04,In Progress,23
+CAP-0044,Routing Pipeline,INIT-007,J. Chen,2025-07-25,2025-11-04,2025-10-31,Done,64
+CAP-0045,Telemetry Orchestrator,INIT-008,S. Rai,2025-04-17,2025-10-01,2025-10-06,In Progress,53
+CAP-0046,Activation Console,INIT-008,L. Nguyen,2025-01-25,2025-04-08,2025-04-11,Done,75
+CAP-0047,Inventory Gateway,INIT-008,R. Kumar,2025-03-11,2025-09-02,2025-09-09,In Progress,75
+CAP-0048,Order Pipeline,INIT-008,L. Nguyen,2025-03-08,2025-07-01,2025-06-21,Done,35
+CAP-0049,API Console,INIT-008,L. Nguyen,2025-03-26,2025-07-03,2025-07-09,At Risk,57
+CAP-0050,Telemetry Service,INIT-008,D. Singh,2025-02-14,2025-06-07,2025-06-14,In Progress,98
+CAP-0051,Inventory Console,INIT-008,R. Kumar,2025-03-13,2025-07-21,2025-08-04,Done,46
+CAP-0052,Customer Connector,INIT-008,A. Johnson,2025-03-21,2025-07-15,2025-07-16,At Risk,41
+CAP-0053,Provisioning Console,INIT-009,L. Nguyen,2025-09-03,2026-01-25,2026-02-02,In Progress,50
+CAP-0054,Routing Console,INIT-009,S. Rai,2025-07-28,2026-01-07,2025-12-29,In Progress,51
+CAP-0055,Partner Gateway,INIT-009,A. Johnson,2025-08-27,2025-12-18,2025-12-31,At Risk,83
+CAP-0056,Customer Pipeline,INIT-009,J. Chen,2025-07-18,2025-12-08,2025-12-18,At Risk,48
+CAP-0057,Activation Insights,INIT-009,J. Chen,2025-07-06,2025-11-14,2025-11-09,At Risk,37
+CAP-0058,Notification Insights,INIT-009,L. Nguyen,2025-09-23,2026-01-28,2026-02-15,At Risk,98
+CAP-0059,Settlement Orchestrator,INIT-009,M. Patel,2025-10-14,2026-04-08,2026-04-14,At Risk,77
+CAP-0060,Billing Pipeline,INIT-009,P. Wong,2025-10-15,2026-03-05,2026-02-28,In Progress,55
+CAP-0061,Provisioning Console,INIT-010,J. Chen,2025-03-31,2025-07-03,2025-07-01,In Progress,39
+CAP-0062,Diagnostics Orchestrator,INIT-010,J. Chen,2025-05-28,2025-08-15,2025-08-21,At Risk,72
+CAP-0063,Identity Insights,INIT-010,D. Singh,2025-04-23,2025-06-29,2025-06-25,At Risk,94
+CAP-0064,API Platform,INIT-010,D. Singh,2025-06-18,2025-12-07,2025-12-22,At Risk,20
+CAP-0065,Identity Console,INIT-010,D. Singh,2025-06-05,2025-09-22,2025-10-04,In Progress,82
+CAP-0066,Diagnostics Console,INIT-010,L. Nguyen,2025-04-25,2025-08-25,2025-08-13,At Risk,41
+CAP-0067,Activation Platform,INIT-011,S. Rai,2025-07-30,2025-11-17,2025-11-22,In Progress,74
+CAP-0068,Activation Insights,INIT-011,L. Nguyen,2025-04-28,2025-07-03,2025-06-30,In Progress,78
+CAP-0069,Identity Connector,INIT-011,D. Singh,2025-07-11,2025-12-30,2025-12-29,Done,30
+CAP-0070,Partner Platform,INIT-011,L. Nguyen,2025-07-09,2025-11-15,2025-11-03,In Progress,28
+CAP-0071,Notification Platform,INIT-011,A. Johnson,2025-07-10,2025-09-11,2025-09-19,In Progress,99
+CAP-0072,Activation Pipeline,INIT-011,A. Johnson,2025-04-21,2025-08-19,2025-08-27,At Risk,52
+CAP-0073,Activation Gateway,INIT-012,R. Kumar,2025-08-24,2026-02-04,2026-01-25,In Progress,94
+CAP-0074,Order Console,INIT-012,D. Singh,2025-07-29,2025-12-22,2026-01-09,At Risk,45
+CAP-0075,Provisioning Pipeline,INIT-012,J. Chen,2025-05-30,2025-10-26,2025-11-08,In Progress,64
+CAP-0076,Telemetry Orchestrator,INIT-012,L. Nguyen,2025-08-09,2025-11-24,2025-11-15,In Progress,73
+CAP-0077,Settlement Insights,INIT-012,P. Wong,2025-05-30,2025-09-22,2025-10-08,In Progress,75
+CAP-0078,API Console,INIT-013,P. Wong,2025-09-11,2026-02-21,2026-03-14,At Risk,75
+CAP-0079,Settlement Console,INIT-013,J. Chen,2025-08-05,2026-01-21,2026-01-14,Done,77
+CAP-0080,Diagnostics Insights,INIT-013,L. Nguyen,2025-09-05,2026-01-21,2026-01-30,In Progress,83
+CAP-0081,Settlement Connector,INIT-013,R. Kumar,2025-07-18,2025-11-17,2025-11-11,Done,55
+CAP-0082,API Console,INIT-014,A. Johnson,2025-06-23,2025-08-23,2025-08-24,In Progress,50
+CAP-0083,API Orchestrator,INIT-014,P. Wong,2025-06-14,2025-10-23,2025-11-03,At Risk,77
+CAP-0084,Notification Platform,INIT-014,A. Johnson,2025-04-24,2025-07-30,2025-07-25,Done,94
+CAP-0085,Identity Insights,INIT-014,L. Nguyen,2025-06-22,2025-10-27,2025-10-25,Done,78
+CAP-0086,Billing Console,INIT-014,A. Johnson,2025-05-15,2025-08-12,2025-08-05,Done,35
+CAP-0087,API Service,INIT-014,R. Kumar,2025-05-07,2025-08-02,2025-08-09,Done,32
+CAP-0088,Settlement Pipeline,INIT-014,R. Kumar,2025-05-20,2025-08-17,2025-08-16,In Progress,88
+CAP-0089,Billing Platform,INIT-015,M. Patel,2025-06-23,2025-10-31,2025-10-27,At Risk,33
+CAP-0090,Settlement Platform,INIT-015,P. Wong,2025-08-29,2025-12-03,2025-12-04,Done,43
+CAP-0091,Order Console,INIT-015,J. Chen,2025-10-15,2026-04-03,2026-04-06,At Risk,82
+CAP-0092,Provisioning Platform,INIT-015,R. Kumar,2025-07-06,2025-09-23,2025-10-01,In Progress,51

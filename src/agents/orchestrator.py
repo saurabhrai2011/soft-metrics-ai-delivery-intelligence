@@ -1,119 +1,155 @@
-import os
-from dotenv import load_dotenv
+"""Delivery-intelligence agent: Claude picks the tool, executes via run_agent loop."""
+
+from __future__ import annotations
 
 from src.agents.tools import (
-	run_metrics_explainer,
-	run_narrative_generator,
-	run_rca_analysis,
-	run_risk_analysis,
-	run_sql_query,
+    run_metrics_explainer,
+    run_narrative_generator,
+    run_rca_analysis,
+    run_risk_analysis,
 )
-from src.llm.provider_factory import get_llm_provider
-from src.llm.prompts import build_grounded_answer_prompt
+from src.agents.tools.query_metrics import query_metrics
+from src.llm.anthropic_provider import run_agent
 from src.rag.citation_validator import validate_citations
 
-load_dotenv()
+
+SYSTEM_PROMPT = """You are an AI Delivery Intelligence Assistant for software engineering leaders.
+
+You have tools that return evidence about initiatives, capabilities, and epics.
+Pick the tool that best fits the user's question. You may call multiple tools.
+
+Grounding rules:
+- Answer using ONLY the evidence returned by tools.
+- Every factual claim must cite an evidence ID in square brackets, e.g. [E1].
+- Use the exact IDs you see in tool results — do not renumber.
+- Do not invent metrics, owners, teams, or causes.
+- If evidence is insufficient, say so explicitly.
+
+Answer format:
+1. Direct Answer
+2. Supporting Evidence (with [E#] citations)
+3. Recommended Action (only if supported by evidence)
+"""
+
+
+TOOLS = [
+    {
+        "name": "query_metrics",
+        "description": (
+            "Run a read-only SQL SELECT against the delivery dataset. "
+            "Use this for any counting, listing, filtering, trend, or join question. "
+            "Tables:\n"
+            "  initiatives(initiative_id, initiative_name, owner, start_date, "
+            "target_end_date, budget_aud_m, strategic_priority, status)\n"
+            "  capabilities(capability_id, capability_name, initiative_id, owner, "
+            "start_date, planned_end_date, actual_end_date, status, completion_pct)\n"
+            "  epics(epic_id, epic_name, capability_id, team, owner, priority, "
+            "story_points, start_date, planned_end_date, actual_end_date, "
+            "cycle_time_days, status, days_in_current_status, defect_count)\n"
+            "Join capabilities to initiatives on initiative_id; epics to capabilities "
+            "on capability_id. DuckDB SQL. Always include LIMIT."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "sql": {"type": "string", "description": "A DuckDB SELECT query."}
+            },
+            "required": ["sql"],
+        },
+    },
+    {
+        "name": "run_rca_analysis",
+        "description": (
+            "Root-cause analysis over current bottlenecks. Use when the user asks "
+            "WHY something is slow, what is causing delays, or what is driving "
+            "defects. Returns ranked bottleneck evidence."
+        ),
+        "input_schema": {"type": "object", "properties": {}},
+    },
+    {
+        "name": "run_risk_analysis",
+        "description": (
+            "Identify domains/initiatives at elevated delivery risk. Use when the "
+            "user asks what is at risk, behind schedule, slipping, or likely to "
+            "miss a target date."
+        ),
+        "input_schema": {"type": "object", "properties": {}},
+    },
+    {
+        "name": "run_narrative_generator",
+        "description": (
+            "Generate an executive-style delivery narrative from current health "
+            "metrics. Use when the user asks for a leadership summary, status "
+            "update, or executive narrative."
+        ),
+        "input_schema": {"type": "object", "properties": {}},
+    },
+    {
+        "name": "run_metrics_explainer",
+        "description": (
+            "Explain delivery health metrics by domain. Use for general questions "
+            "about how a domain is performing when no other tool fits better."
+        ),
+        "input_schema": {"type": "object", "properties": {}},
+    },
+]
 
 
 class DeliveryIntelligenceAgent:
-	"""
-	Agentic orchestration layer.
+    """Claude-driven agent: tool selection happens inside the model, not here."""
 
-	Responsibilities:
-	1. Classify user intent.
-	2. Select the right existing tool.
-	3. Execute tool and retrieve evidence.
-	4. Generate grounded answer using offline or live LLM provider.
-	5. Validate citations.
-	6. Return answer, evidence, and trace.
-	"""
+    def run(self, question: str) -> dict:
+        collected_evidence: list[dict] = []
+        collected_raw: list[dict] = []
 
-	def __init__(self):
-		self.llm = get_llm_provider()
+        def _reid_and_format(local_evidence: list[dict]) -> str:
+            start = len(collected_evidence)
+            lines = []
+            for offset, item in enumerate(local_evidence):
+                new_id = f"E{start + offset + 1}"
+                reided = {**item, "id": new_id}
+                collected_evidence.append(reided)
+                lines.append(f"[{new_id}] {reided['text']}")
+            return "\n".join(lines) if lines else "No evidence returned."
 
-		self.tool_registry = {
-			"metrics_explainer": run_metrics_explainer,
-			"narrative": run_narrative_generator,
-			"rca": run_rca_analysis,
-			"risk": run_risk_analysis,
-			"sql_query": run_sql_query,
-		}
+        def _wrap(fn):
+            def handler(_input):
+                result = fn()
+                collected_raw.extend(result.get("raw_data", []))
+                return _reid_and_format(result.get("evidence", []))
+            return handler
 
-	def classify_intent(self, question: str) -> dict:
-		q = question.lower()
+        def _query_metrics_handler(input_dict):
+            result = query_metrics(input_dict["sql"])
+            if result.get("error") and not result["evidence"]:
+                return f"ERROR: {result['error']}"
+            collected_raw.extend(result.get("raw_data", []))
+            formatted = _reid_and_format(result.get("evidence", []))
+            return formatted + (f"\n[{result['error']}]" if result.get("error") else "")
 
-		if "root cause" in q or "why" in q or "cause" in q:
-			return {
-				"intent": "root_cause_analysis",
-				"tool_key": "rca",
-				"reason": "Question asks why something is happening or asks for root cause.",
-			}
+        tool_handlers = {
+            "query_metrics": _query_metrics_handler,
+            "run_rca_analysis": _wrap(run_rca_analysis),
+            "run_risk_analysis": _wrap(run_risk_analysis),
+            "run_narrative_generator": _wrap(run_narrative_generator),
+            "run_metrics_explainer": _wrap(run_metrics_explainer),
+        }
 
-		if "risk" in q or "behind" in q or "delay" in q or "likely to miss" in q:
-			return {
-				"intent": "risk_analysis",
-				"tool_key": "risk",
-				"reason": "Question asks about delivery risk or delayed areas.",
-			}
+        result = run_agent(
+            user_question=question,
+            tools=TOOLS,
+            tool_handlers=tool_handlers,
+            system=SYSTEM_PROMPT,
+        )
 
-		if "executive" in q or "summary" in q or "narrative" in q:
-			return {
-				"intent": "executive_narrative",
-				"tool_key": "narrative",
-				"reason": "Question asks for a leadership summary or narrative.",
-			}
+        answer = result["answer"]
+        citation_check = validate_citations(answer, collected_evidence)
 
-		if "sql" in q or "query" in q or "table" in q:
-			return {
-				"intent": "structured_query",
-				"tool_key": "sql_query",
-				"reason": "Question asks for structured query or tabular metric output.",
-			}
-
-		return {
-			"intent": "metrics_explanation",
-			"tool_key": "metrics_explainer",
-			"reason": "Defaulting to general metrics explanation.",
-		}
-
-	def run_selected_tool(self, tool_key: str) -> dict:
-		if tool_key == "sql_query":
-			return self.tool_registry[tool_key](query_type="delivery_health")
-
-		return self.tool_registry[tool_key]()
-
-	def run(self, question: str) -> dict:
-		plan = self.classify_intent(question)
-		tool_key = plan["tool_key"]
-
-		tool_result = self.run_selected_tool(tool_key)
-		evidence = tool_result.get("evidence", [])
-
-		agent_trace = {
-			"question": question,
-			"intent": plan["intent"],
-			"selected_tool": tool_result.get("tool_name"),
-			"tool_reason": plan["reason"],
-			"llm_provider": os.getenv("LLM_PROVIDER", "offline"),
-			"use_llm": os.getenv("USE_LLM", "false"),
-		}
-
-		prompt = build_grounded_answer_prompt(
-			question=question,
-			evidence=evidence,
-			agent_trace=agent_trace,
-		)
-
-		answer = self.llm.complete(prompt)
-
-		citation_check = validate_citations(answer, evidence)
-
-		return {
-			"question": question,
-			"plan": plan,
-			"agent_trace": agent_trace,
-			"answer": answer,
-			"evidence": evidence,
-			"citation_check": citation_check,
-			"raw_data": tool_result.get("raw_data", []),
-		}
+        return {
+            "question": question,
+            "answer": answer,
+            "evidence": collected_evidence,
+            "raw_data": collected_raw,
+            "citation_check": citation_check,
+            "trace": result["trace"],
+        }

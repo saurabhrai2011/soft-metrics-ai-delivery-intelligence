@@ -1,0 +1,746 @@
+epic_id,epic_name,capability_id,team,owner,priority,story_points,start_date,planned_end_date,actual_end_date,cycle_time_days,status,days_in_current_status,defect_count
+EPIC-00001,Decommission Activation auth flow,CAP-0001,Team Draco,P. Wong,P2,21,2025-11-05,2025-12-28,2025-12-27,52,Done,8,4
+EPIC-00002,Refactor Activation auth flow,CAP-0001,Team Draco,A. Johnson,P2,3,2025-10-25,2025-11-11,,17,In Progress,11,0
+EPIC-00003,Migrate Activation endpoint,CAP-0001,Team Orion,P. Wong,P2,3,2025-10-21,2025-11-08,2025-11-07,17,Done,12,3
+EPIC-00004,Refactor Activation batch job,CAP-0001,Team Vega,A. Johnson,P3,3,2025-10-04,2025-12-01,,62,In Progress,5,0
+EPIC-00005,Integrate Activation endpoint,CAP-0001,Team Vega,R. Kumar,P2,13,2025-11-13,2025-12-14,,33,Not Started,3,0
+EPIC-00006,Build Activation batch job,CAP-0001,Team Atlas,P. Wong,P3,3,2025-10-05,2025-12-02,,58,Blocked,9,2
+EPIC-00007,Build Activation batch job,CAP-0001,Team Phoenix,S. Rai,P2,21,2025-10-06,2025-11-27,,51,In Progress,11,0
+EPIC-00008,Automate Activation event consumer,CAP-0001,Team Phoenix,M. Patel,P3,13,2025-09-27,2025-11-10,2025-11-21,55,Done,5,8
+EPIC-00009,Build Activation dashboard,CAP-0001,Team Atlas,D. Singh,P3,8,2025-10-12,2025-11-16,,34,In Progress,6,0
+EPIC-00010,Automate Activation event consumer,CAP-0001,Team Draco,J. Chen,P3,21,2025-10-21,2025-11-06,,16,In Review,6,2
+EPIC-00011,Integrate Activation event consumer,CAP-0001,Team Phoenix,P. Wong,P3,3,2025-10-20,2025-12-02,,43,Blocked,6,2
+EPIC-00012,Refactor Activation auth flow,CAP-0001,Team Vega,S. Rai,P1,5,2025-09-24,2025-10-26,2025-11-03,40,Done,2,3
+EPIC-00013,Decommission Diagnostics ingestion job,CAP-0002,Team Phoenix,M. Patel,P3,8,2025-08-22,2025-09-19,2025-09-26,35,Done,2,0
+EPIC-00014,Build Diagnostics event consumer,CAP-0002,Team Lyra,M. Patel,P3,5,2025-09-16,2025-10-30,2025-11-10,55,Done,9,1
+EPIC-00015,Automate Diagnostics service,CAP-0002,Team Orion,S. Rai,P2,8,2025-09-03,2025-10-13,,50,Blocked,5,2
+EPIC-00016,Automate Diagnostics endpoint,CAP-0002,Team Nova,D. Singh,P3,8,2025-09-14,2025-11-01,,60,In Review,6,3
+EPIC-00017,Integrate Diagnostics endpoint,CAP-0002,Team Vega,L. Nguyen,P3,13,2025-09-22,2025-10-30,2025-11-08,47,Done,1,1
+EPIC-00018,Integrate Diagnostics event consumer,CAP-0002,Team Draco,L. Nguyen,P0,13,2025-10-08,2025-12-02,,60,Not Started,3,3
+EPIC-00019,Decommission Diagnostics ingestion job,CAP-0002,Team Atlas,M. Patel,P0,13,2025-08-17,2025-10-16,2025-10-31,75,Done,14,1
+EPIC-00020,Refactor Diagnostics auth flow,CAP-0002,Team Lyra,D. Singh,P2,13,2025-09-30,2025-11-08,,48,In Review,14,0
+EPIC-00021,Decommission Routing service,CAP-0003,Team Phoenix,J. Chen,P3,3,2025-10-07,2025-11-30,,56,In Progress,12,4
+EPIC-00022,Build Routing endpoint,CAP-0003,Team Atlas,S. Rai,P2,8,2025-11-05,2025-12-08,,35,In Review,13,0
+EPIC-00023,Build Routing endpoint,CAP-0003,Team Cygnus,J. Chen,P3,21,2025-10-07,2025-11-23,,47,In Progress,3,1
+EPIC-00024,Build Routing auth flow,CAP-0003,Team Vega,S. Rai,P3,8,2025-10-01,2025-10-29,2025-10-29,28,Done,5,2
+EPIC-00025,Implement Routing ingestion job,CAP-0003,Team Orion,R. Kumar,P3,8,2025-11-21,2025-12-27,2025-12-30,39,Done,12,2
+EPIC-00026,Build Routing event consumer,CAP-0003,Team Vega,R. Kumar,P2,3,2025-10-22,2025-11-11,,19,In Review,10,4
+EPIC-00027,Refactor Routing service,CAP-0003,Team Draco,P. Wong,P2,5,2025-10-28,2025-12-24,,60,Blocked,12,0
+EPIC-00028,Migrate Routing batch job,CAP-0003,Team Cygnus,S. Rai,P2,13,2025-10-04,2025-11-26,,52,Not Started,11,1
+EPIC-00029,Decommission Routing dashboard,CAP-0003,Team Phoenix,D. Singh,P1,5,2025-11-07,2025-11-29,,21,In Review,12,4
+EPIC-00030,Automate Routing auth flow,CAP-0003,Team Orion,P. Wong,P2,8,2025-11-17,2025-12-24,,38,In Progress,5,2
+EPIC-00031,Build Routing service,CAP-0003,Team Atlas,J. Chen,P3,3,2025-10-01,2025-10-29,,30,Blocked,6,3
+EPIC-00032,Decommission Routing service,CAP-0003,Team Lyra,L. Nguyen,P0,5,2025-10-21,2025-11-27,,38,Blocked,7,2
+EPIC-00033,Decommission Inventory auth flow,CAP-0004,Team Phoenix,P. Wong,P2,13,2025-09-08,2025-10-31,,66,Not Started,11,2
+EPIC-00034,Migrate Inventory service,CAP-0004,Team Atlas,A. Johnson,P1,13,2025-10-18,2025-11-03,,15,Not Started,2,3
+EPIC-00035,Refactor Inventory batch job,CAP-0004,Team Nova,M. Patel,P3,3,2025-10-18,2025-12-15,,63,Blocked,12,3
+EPIC-00036,Decommission Inventory ingestion job,CAP-0004,Team Nova,P. Wong,P1,8,2025-10-18,2025-11-18,,29,In Progress,8,2
+EPIC-00037,Integrate Inventory dashboard,CAP-0004,Team Atlas,R. Kumar,P1,3,2025-09-22,2025-11-16,,68,Not Started,7,2
+EPIC-00038,Implement Inventory batch job,CAP-0004,Team Nova,L. Nguyen,P1,5,2025-09-01,2025-10-26,,68,Not Started,1,4
+EPIC-00039,Implement Inventory event consumer,CAP-0004,Team Vega,M. Patel,P0,8,2025-10-06,2025-11-24,,48,In Progress,6,1
+EPIC-00040,Migrate Inventory auth flow,CAP-0004,Team Orion,S. Rai,P2,5,2025-09-04,2025-09-29,,31,Not Started,3,0
+EPIC-00041,Implement Inventory endpoint,CAP-0004,Team Cygnus,J. Chen,P0,13,2025-09-04,2025-09-21,2025-09-25,21,Done,9,1
+EPIC-00042,Automate Inventory dashboard,CAP-0004,Team Nova,A. Johnson,P0,21,2025-09-20,2025-11-10,2025-11-22,63,Done,9,0
+EPIC-00043,Build Inventory batch job,CAP-0004,Team Lyra,J. Chen,P3,13,2025-08-20,2025-09-06,2025-09-10,21,Done,7,3
+EPIC-00044,Refactor Notification auth flow,CAP-0005,Team Atlas,L. Nguyen,P3,21,2025-09-28,2025-10-16,,22,In Review,10,1
+EPIC-00045,Build Notification auth flow,CAP-0005,Team Lyra,A. Johnson,P3,13,2025-10-27,2025-12-07,,39,Blocked,12,0
+EPIC-00046,Build Notification dashboard,CAP-0005,Team Vega,L. Nguyen,P2,8,2025-11-10,2025-12-23,,43,In Review,7,0
+EPIC-00047,Integrate Notification ingestion job,CAP-0005,Team Orion,J. Chen,P2,5,2025-09-23,2025-10-12,,23,Not Started,7,0
+EPIC-00048,Decommission Notification auth flow,CAP-0005,Team Phoenix,D. Singh,P0,8,2025-10-24,2025-11-28,,36,In Review,14,6
+EPIC-00049,Implement Order auth flow,CAP-0006,Team Cygnus,J. Chen,P2,21,2025-05-12,2025-06-08,,26,In Progress,14,3
+EPIC-00050,Implement Order event consumer,CAP-0006,Team Cygnus,S. Rai,P2,3,2025-04-27,2025-06-16,,49,Blocked,13,3
+EPIC-00051,Refactor Order batch job,CAP-0006,Team Orion,M. Patel,P3,3,2025-05-28,2025-06-30,,35,Not Started,3,2
+EPIC-00052,Integrate Order batch job,CAP-0006,Team Orion,P. Wong,P2,5,2025-04-11,2025-04-30,2025-05-01,20,Done,7,1
+EPIC-00053,Refactor Order batch job,CAP-0006,Team Cygnus,S. Rai,P0,8,2025-04-30,2025-06-19,,51,In Progress,3,0
+EPIC-00054,Integrate Order ingestion job,CAP-0006,Team Nova,J. Chen,P2,13,2025-05-11,2025-07-02,,52,In Progress,13,2
+EPIC-00055,Refactor Order batch job,CAP-0006,Team Atlas,D. Singh,P0,3,2025-05-23,2025-07-13,,52,Not Started,4,2
+EPIC-00056,Refactor Order endpoint,CAP-0006,Team Vega,S. Rai,P3,13,2025-05-29,2025-06-20,,23,In Review,2,2
+EPIC-00057,Build Inventory auth flow,CAP-0007,Team Orion,S. Rai,P3,3,2025-04-10,2025-05-08,,28,Not Started,7,2
+EPIC-00058,Implement Inventory event consumer,CAP-0007,Team Nova,J. Chen,P3,3,2025-03-16,2025-05-05,2025-05-05,50,Done,5,3
+EPIC-00059,Migrate Inventory event consumer,CAP-0007,Team Cygnus,J. Chen,P1,13,2025-04-25,2025-06-17,,54,Not Started,7,2
+EPIC-00060,Decommission Inventory service,CAP-0007,Team Draco,M. Patel,P0,21,2025-03-21,2025-04-23,,35,In Review,13,1
+EPIC-00061,Decommission Inventory auth flow,CAP-0007,Team Atlas,M. Patel,P2,5,2025-03-08,2025-04-13,,36,In Progress,2,1
+EPIC-00062,Decommission Inventory endpoint,CAP-0007,Team Orion,P. Wong,P2,8,2025-04-13,2025-06-07,2025-06-04,52,Done,13,3
+EPIC-00063,Implement Order ingestion job,CAP-0008,Team Nova,S. Rai,P2,21,2025-07-01,2025-08-24,,67,In Review,10,2
+EPIC-00064,Refactor Order ingestion job,CAP-0008,Team Atlas,R. Kumar,P0,3,2025-07-01,2025-07-17,,20,In Review,14,0
+EPIC-00065,Build Order auth flow,CAP-0008,Team Draco,A. Johnson,P2,21,2025-07-08,2025-07-24,,20,Blocked,11,3
+EPIC-00066,Decommission Order endpoint,CAP-0008,Team Nova,M. Patel,P0,5,2025-06-06,2025-07-18,,40,Not Started,9,2
+EPIC-00067,Build Order auth flow,CAP-0008,Team Nova,R. Kumar,P3,13,2025-07-06,2025-08-28,,66,In Review,6,1
+EPIC-00068,Integrate Order auth flow,CAP-0008,Team Cygnus,D. Singh,P2,8,2025-06-06,2025-07-30,,56,In Review,2,0
+EPIC-00069,Implement API auth flow,CAP-0009,Team Cygnus,J. Chen,P2,21,2025-03-29,2025-04-21,2025-04-23,25,Done,3,2
+EPIC-00070,Integrate API event consumer,CAP-0009,Team Draco,D. Singh,P2,3,2025-03-08,2025-03-30,,23,In Review,36,4
+EPIC-00071,Refactor API endpoint,CAP-0009,Team Cygnus,M. Patel,P0,8,2025-04-16,2025-05-13,,27,In Review,19,3
+EPIC-00072,Decommission API event consumer,CAP-0009,Team Atlas,D. Singh,P1,5,2025-03-21,2025-05-07,,44,Blocked,3,2
+EPIC-00073,Automate API batch job,CAP-0009,Team Orion,L. Nguyen,P1,13,2025-04-05,2025-05-28,,56,Not Started,7,1
+EPIC-00074,Automate API batch job,CAP-0009,Team Lyra,P. Wong,P1,8,2025-04-06,2025-05-18,,41,In Review,40,1
+EPIC-00075,Automate Routing dashboard,CAP-0010,Team Nova,A. Johnson,P1,8,2025-06-04,2025-07-12,,38,In Progress,14,3
+EPIC-00076,Integrate Routing ingestion job,CAP-0010,Team Phoenix,J. Chen,P2,3,2025-06-10,2025-07-17,,38,Blocked,14,0
+EPIC-00077,Refactor Routing ingestion job,CAP-0010,Team Orion,P. Wong,P2,3,2025-06-12,2025-07-28,,44,Not Started,4,3
+EPIC-00078,Implement Routing ingestion job,CAP-0010,Team Draco,S. Rai,P2,3,2025-05-18,2025-06-24,,36,In Review,4,0
+EPIC-00079,Automate Routing endpoint,CAP-0010,Team Cygnus,P. Wong,P3,21,2025-04-24,2025-05-10,,15,In Progress,13,3
+EPIC-00080,Implement Routing service,CAP-0010,Team Phoenix,D. Singh,P0,8,2025-05-02,2025-05-29,,29,Blocked,9,8
+EPIC-00081,Refactor Routing service,CAP-0010,Team Vega,J. Chen,P3,21,2025-04-19,2025-05-18,2025-05-18,29,Done,2,4
+EPIC-00082,Integrate Routing auth flow,CAP-0010,Team Phoenix,L. Nguyen,P1,21,2025-05-22,2025-06-20,2025-06-21,30,Done,1,4
+EPIC-00083,Migrate Routing batch job,CAP-0010,Team Draco,S. Rai,P3,13,2025-05-28,2025-06-16,,19,Not Started,9,2
+EPIC-00084,Integrate Routing ingestion job,CAP-0010,Team Phoenix,A. Johnson,P0,21,2025-05-09,2025-06-08,,31,Not Started,6,4
+EPIC-00085,Migrate Routing service,CAP-0010,Team Cygnus,P. Wong,P1,5,2025-05-08,2025-06-25,2025-06-25,48,Done,12,1
+EPIC-00086,Implement Notification dashboard,CAP-0011,Team Nova,D. Singh,P3,8,2025-05-19,2025-06-04,,17,In Review,5,0
+EPIC-00087,Automate Notification batch job,CAP-0011,Team Phoenix,J. Chen,P2,13,2025-05-19,2025-06-20,,32,In Review,5,0
+EPIC-00088,Integrate Notification ingestion job,CAP-0011,Team Draco,P. Wong,P2,21,2025-07-03,2025-08-10,,47,In Progress,8,2
+EPIC-00089,Automate Notification service,CAP-0011,Team Lyra,R. Kumar,P2,3,2025-06-22,2025-08-02,,39,In Progress,9,4
+EPIC-00090,Refactor Notification batch job,CAP-0011,Team Atlas,P. Wong,P2,13,2025-05-25,2025-06-27,,33,In Progress,12,3
+EPIC-00091,Decommission Provisioning ingestion job,CAP-0012,Team Cygnus,D. Singh,P2,21,2025-03-10,2025-05-03,,59,Not Started,11,0
+EPIC-00092,Implement Provisioning endpoint,CAP-0012,Team Orion,J. Chen,P1,8,2025-04-16,2025-06-07,,54,Not Started,3,3
+EPIC-00093,Build Provisioning auth flow,CAP-0012,Team Cygnus,P. Wong,P0,21,2025-02-23,2025-04-16,,50,In Review,6,3
+EPIC-00094,Decommission Provisioning dashboard,CAP-0012,Team Orion,M. Patel,P3,21,2025-03-18,2025-04-21,,35,Not Started,1,1
+EPIC-00095,Refactor Telemetry event consumer,CAP-0013,Team Atlas,P. Wong,P1,3,2025-04-25,2025-06-23,,59,In Review,12,4
+EPIC-00096,Automate Telemetry service,CAP-0013,Team Orion,L. Nguyen,P2,3,2025-05-07,2025-06-01,,27,Not Started,13,3
+EPIC-00097,Refactor Telemetry event consumer,CAP-0013,Team Lyra,A. Johnson,P0,5,2025-04-19,2025-06-17,,62,In Review,9,1
+EPIC-00098,Migrate Telemetry event consumer,CAP-0013,Team Orion,M. Patel,P0,3,2025-05-10,2025-05-25,,15,In Review,8,4
+EPIC-00099,Build Telemetry batch job,CAP-0013,Team Lyra,M. Patel,P2,3,2025-05-25,2025-07-08,,45,Blocked,2,3
+EPIC-00100,Build Telemetry batch job,CAP-0013,Team Nova,M. Patel,P3,21,2025-05-12,2025-06-17,,34,Blocked,3,4
+EPIC-00101,Automate Telemetry service,CAP-0013,Team Phoenix,A. Johnson,P2,21,2025-05-12,2025-06-04,,22,In Review,12,2
+EPIC-00102,Automate Telemetry service,CAP-0013,Team Lyra,R. Kumar,P0,21,2025-04-25,2025-05-21,,27,In Review,3,4
+EPIC-00103,Decommission Telemetry auth flow,CAP-0013,Team Orion,S. Rai,P0,3,2025-04-18,2025-05-12,,25,In Review,14,4
+EPIC-00104,Integrate Telemetry event consumer,CAP-0013,Team Phoenix,S. Rai,P3,21,2025-05-15,2025-06-14,2025-06-15,31,Done,10,8
+EPIC-00105,Build Order endpoint,CAP-0014,Team Lyra,S. Rai,P1,13,2025-03-24,2025-05-20,,57,Not Started,12,3
+EPIC-00106,Build Order ingestion job,CAP-0014,Team Draco,L. Nguyen,P3,5,2025-02-14,2025-03-21,,36,In Review,12,2
+EPIC-00107,Decommission Order auth flow,CAP-0014,Team Cygnus,A. Johnson,P1,3,2025-02-07,2025-03-13,,33,In Review,8,0
+EPIC-00108,Refactor Order ingestion job,CAP-0014,Team Phoenix,L. Nguyen,P1,5,2025-03-28,2025-05-20,,53,In Review,10,2
+EPIC-00109,Decommission Order ingestion job,CAP-0014,Team Nova,P. Wong,P1,5,2025-03-04,2025-04-06,2025-04-06,33,Done,9,0
+EPIC-00110,Implement Order service,CAP-0014,Team Cygnus,S. Rai,P0,13,2025-02-19,2025-04-05,,46,In Review,9,3
+EPIC-00111,Refactor Order batch job,CAP-0014,Team Orion,A. Johnson,P2,21,2025-02-24,2025-04-04,,39,Not Started,10,3
+EPIC-00112,Implement Order ingestion job,CAP-0014,Team Lyra,J. Chen,P1,3,2025-03-05,2025-04-16,,44,Blocked,11,2
+EPIC-00113,Automate Telemetry dashboard,CAP-0015,Team Cygnus,D. Singh,P0,3,2025-04-04,2025-05-11,,39,Blocked,9,1
+EPIC-00114,Migrate Telemetry batch job,CAP-0015,Team Phoenix,M. Patel,P2,21,2025-03-21,2025-05-04,,45,Blocked,9,2
+EPIC-00115,Migrate Telemetry ingestion job,CAP-0015,Team Cygnus,P. Wong,P2,13,2025-04-08,2025-05-11,,34,Blocked,9,4
+EPIC-00116,Refactor Telemetry dashboard,CAP-0015,Team Phoenix,S. Rai,P3,8,2025-04-12,2025-05-03,,23,In Review,13,8
+EPIC-00117,Integrate Telemetry service,CAP-0015,Team Vega,A. Johnson,P0,21,2025-04-06,2025-05-20,2025-05-18,42,Done,3,4
+EPIC-00118,Migrate Telemetry service,CAP-0015,Team Atlas,P. Wong,P0,5,2025-03-28,2025-05-01,,34,In Progress,7,3
+EPIC-00119,Decommission Telemetry dashboard,CAP-0015,Team Vega,L. Nguyen,P2,8,2025-04-11,2025-05-25,,45,In Progress,8,2
+EPIC-00120,Migrate Telemetry endpoint,CAP-0015,Team Nova,A. Johnson,P3,8,2025-03-17,2025-05-05,,48,In Review,12,2
+EPIC-00121,Refactor Telemetry auth flow,CAP-0015,Team Nova,D. Singh,P3,8,2025-04-28,2025-06-27,,59,Blocked,11,0
+EPIC-00122,Refactor Telemetry service,CAP-0015,Team Orion,P. Wong,P1,5,2025-03-18,2025-05-16,,56,In Review,12,3
+EPIC-00123,Decommission Activation batch job,CAP-0016,Team Lyra,S. Rai,P1,5,2025-03-13,2025-04-04,,21,In Progress,4,4
+EPIC-00124,Implement Activation ingestion job,CAP-0016,Team Phoenix,M. Patel,P3,13,2025-03-17,2025-05-15,,60,Not Started,9,2
+EPIC-00125,Integrate Activation endpoint,CAP-0016,Team Nova,A. Johnson,P0,5,2025-04-13,2025-05-15,,31,Not Started,11,0
+EPIC-00126,Automate Activation endpoint,CAP-0016,Team Draco,R. Kumar,P0,3,2025-04-24,2025-05-10,2025-05-11,17,Done,3,3
+EPIC-00127,Decommission Activation auth flow,CAP-0016,Team Lyra,M. Patel,P3,8,2025-03-02,2025-04-06,,34,Blocked,8,4
+EPIC-00128,Automate Activation service,CAP-0016,Team Vega,L. Nguyen,P2,21,2025-03-17,2025-04-10,,25,In Progress,1,2
+EPIC-00129,Migrate Activation auth flow,CAP-0016,Team Vega,J. Chen,P3,3,2025-04-19,2025-06-12,,58,Blocked,6,3
+EPIC-00130,Migrate Activation ingestion job,CAP-0016,Team Orion,R. Kumar,P2,8,2025-03-16,2025-04-14,,27,In Progress,8,3
+EPIC-00131,Refactor Activation batch job,CAP-0016,Team Phoenix,M. Patel,P3,21,2025-03-19,2025-05-16,2025-05-15,57,Done,5,0
+EPIC-00132,Integrate Activation service,CAP-0016,Team Lyra,P. Wong,P1,13,2025-04-05,2025-05-07,,32,In Progress,3,1
+EPIC-00133,Build Activation batch job,CAP-0016,Team Cygnus,J. Chen,P3,21,2025-03-31,2025-05-14,,46,In Progress,11,1
+EPIC-00134,Implement Activation auth flow,CAP-0016,Team Cygnus,M. Patel,P1,8,2025-03-03,2025-03-20,,18,In Progress,10,4
+EPIC-00135,Implement Provisioning batch job,CAP-0017,Team Nova,S. Rai,P3,5,2025-05-01,2025-06-29,,61,Blocked,8,0
+EPIC-00136,Build Provisioning auth flow,CAP-0017,Team Draco,R. Kumar,P0,5,2025-04-21,2025-06-09,,49,Not Started,7,2
+EPIC-00137,Implement Provisioning ingestion job,CAP-0017,Team Atlas,S. Rai,P2,13,2025-05-10,2025-07-07,,55,Not Started,8,0
+EPIC-00138,Automate Provisioning endpoint,CAP-0017,Team Orion,P. Wong,P3,13,2025-06-06,2025-07-31,,60,In Review,7,3
+EPIC-00139,Integrate Provisioning batch job,CAP-0017,Team Atlas,D. Singh,P1,5,2025-06-12,2025-07-30,,46,Not Started,3,2
+EPIC-00140,Automate Provisioning service,CAP-0017,Team Phoenix,D. Singh,P1,5,2025-05-07,2025-06-19,2025-06-21,45,Done,9,8
+EPIC-00141,Refactor Provisioning endpoint,CAP-0017,Team Nova,D. Singh,P0,5,2025-05-05,2025-05-31,,28,Not Started,13,0
+EPIC-00142,Implement Provisioning service,CAP-0017,Team Vega,S. Rai,P3,13,2025-05-26,2025-06-11,,16,In Progress,12,0
+EPIC-00143,Decommission Provisioning endpoint,CAP-0017,Team Vega,L. Nguyen,P2,5,2025-06-05,2025-06-22,,16,In Progress,14,2
+EPIC-00144,Migrate Provisioning batch job,CAP-0017,Team Lyra,M. Patel,P3,21,2025-05-21,2025-06-18,,28,Not Started,9,2
+EPIC-00145,Implement Provisioning dashboard,CAP-0017,Team Nova,D. Singh,P3,5,2025-06-17,2025-08-11,,57,In Review,12,4
+EPIC-00146,Build Provisioning endpoint,CAP-0017,Team Lyra,M. Patel,P3,3,2025-06-05,2025-07-23,,49,In Review,14,1
+EPIC-00147,Build Settlement auth flow,CAP-0018,Team Draco,J. Chen,P3,8,2025-10-13,2025-11-04,,22,In Progress,6,2
+EPIC-00148,Decommission Settlement batch job,CAP-0018,Team Atlas,S. Rai,P0,5,2025-11-02,2025-11-28,,24,Blocked,10,3
+EPIC-00149,Build Settlement endpoint,CAP-0018,Team Vega,J. Chen,P3,5,2025-11-04,2025-12-09,,34,In Progress,4,0
+EPIC-00150,Build Settlement endpoint,CAP-0018,Team Vega,L. Nguyen,P2,8,2025-10-15,2025-11-18,2025-11-20,36,Done,9,3
+EPIC-00151,Decommission Settlement ingestion job,CAP-0018,Team Cygnus,L. Nguyen,P2,13,2025-10-09,2025-10-29,,21,In Review,4,3
+EPIC-00152,Decommission Settlement event consumer,CAP-0018,Team Phoenix,D. Singh,P2,5,2025-09-24,2025-10-17,,28,In Review,9,0
+EPIC-00153,Refactor Settlement endpoint,CAP-0018,Team Vega,L. Nguyen,P2,13,2025-10-04,2025-11-23,,53,Blocked,11,3
+EPIC-00154,Build Settlement endpoint,CAP-0018,Team Nova,S. Rai,P0,3,2025-10-26,2025-12-01,2025-11-30,35,Done,3,4
+EPIC-00155,Automate Settlement service,CAP-0018,Team Phoenix,M. Patel,P0,5,2025-10-06,2025-10-28,,23,Not Started,12,2
+EPIC-00156,Refactor Settlement service,CAP-0018,Team Nova,P. Wong,P0,3,2025-10-19,2025-12-12,2025-12-14,56,Done,11,4
+EPIC-00157,Implement Settlement service,CAP-0018,Team Draco,D. Singh,P1,3,2025-10-13,2025-12-12,,59,Not Started,9,2
+EPIC-00158,Decommission Settlement endpoint,CAP-0018,Team Atlas,L. Nguyen,P2,13,2025-09-25,2025-10-21,,32,Blocked,5,4
+EPIC-00159,Build API ingestion job,CAP-0019,Team Cygnus,J. Chen,P0,3,2025-11-01,2025-11-30,,31,In Review,11,1
+EPIC-00160,Build API ingestion job,CAP-0019,Team Draco,P. Wong,P3,8,2025-10-31,2025-12-14,,42,In Progress,2,0
+EPIC-00161,Decommission API service,CAP-0019,Team Atlas,S. Rai,P0,8,2025-10-10,2025-11-06,2025-11-08,29,Done,5,4
+EPIC-00162,Migrate API event consumer,CAP-0019,Team Phoenix,D. Singh,P0,8,2025-10-16,2025-10-31,,16,In Progress,13,8
+EPIC-00163,Decommission API endpoint,CAP-0019,Team Orion,M. Patel,P0,21,2025-11-01,2025-12-09,,39,In Review,7,4
+EPIC-00164,Implement Partner ingestion job,CAP-0020,Team Phoenix,D. Singh,P2,3,2025-08-23,2025-09-10,,22,Blocked,13,4
+EPIC-00165,Automate Partner ingestion job,CAP-0020,Team Lyra,D. Singh,P1,21,2025-09-09,2025-10-07,,35,Blocked,7,2
+EPIC-00166,Implement Partner event consumer,CAP-0020,Team Draco,R. Kumar,P1,13,2025-09-17,2025-10-19,,40,Not Started,2,1
+EPIC-00167,Integrate Partner ingestion job,CAP-0020,Team Orion,R. Kumar,P3,8,2025-08-29,2025-10-05,,46,Not Started,1,0
+EPIC-00168,Implement Partner endpoint,CAP-0020,Team Lyra,D. Singh,P0,3,2025-08-14,2025-09-08,2025-09-14,31,Done,9,3
+EPIC-00169,Refactor Partner auth flow,CAP-0020,Team Atlas,D. Singh,P0,8,2025-08-14,2025-10-05,,65,In Review,14,4
+EPIC-00170,Build Partner event consumer,CAP-0020,Team Draco,M. Patel,P3,5,2025-08-14,2025-10-13,,75,In Progress,10,4
+EPIC-00171,Refactor Partner dashboard,CAP-0020,Team Orion,D. Singh,P2,13,2025-08-26,2025-10-10,,56,Not Started,3,1
+EPIC-00172,Build Partner event consumer,CAP-0020,Team Lyra,P. Wong,P1,13,2025-08-13,2025-09-19,,46,In Progress,12,2
+EPIC-00173,Refactor Notification service,CAP-0021,Team Orion,L. Nguyen,P3,8,2025-08-21,2025-09-29,,48,Blocked,7,2
+EPIC-00174,Automate Notification event consumer,CAP-0021,Team Draco,L. Nguyen,P1,13,2025-08-16,2025-10-10,,68,In Progress,5,4
+EPIC-00175,Migrate Notification ingestion job,CAP-0021,Team Cygnus,A. Johnson,P2,13,2025-07-12,2025-08-13,,40,Blocked,13,3
+EPIC-00176,Automate Notification event consumer,CAP-0021,Team Lyra,M. Patel,P0,13,2025-07-17,2025-08-23,,46,Blocked,4,0
+EPIC-00177,Build Notification event consumer,CAP-0021,Team Vega,P. Wong,P1,8,2025-07-10,2025-09-06,2025-09-20,72,Done,11,0
+EPIC-00178,Integrate Activation endpoint,CAP-0022,Team Lyra,P. Wong,P3,21,2025-10-01,2025-11-11,2025-11-13,43,Done,10,0
+EPIC-00179,Decommission Activation service,CAP-0022,Team Draco,J. Chen,P0,5,2025-10-06,2025-11-12,,39,Blocked,11,4
+EPIC-00180,Migrate Activation batch job,CAP-0022,Team Cygnus,L. Nguyen,P3,3,2025-09-25,2025-10-11,2025-10-15,20,Done,13,4
+EPIC-00181,Implement Activation dashboard,CAP-0022,Team Phoenix,A. Johnson,P3,8,2025-08-31,2025-10-16,,57,Blocked,10,8
+EPIC-00182,Build Activation event consumer,CAP-0022,Team Draco,S. Rai,P3,3,2025-09-29,2025-11-19,,63,In Progress,6,4
+EPIC-00183,Build Activation service,CAP-0022,Team Lyra,L. Nguyen,P3,5,2025-08-24,2025-10-23,,75,In Review,5,1
+EPIC-00184,Refactor Activation ingestion job,CAP-0022,Team Nova,R. Kumar,P0,3,2025-08-23,2025-10-04,,52,In Review,2,3
+EPIC-00185,Integrate Customer service,CAP-0023,Team Cygnus,M. Patel,P2,21,2025-09-16,2025-10-10,,30,Blocked,3,1
+EPIC-00186,Build Customer endpoint,CAP-0023,Team Draco,D. Singh,P3,3,2025-09-24,2025-11-02,,48,In Progress,11,1
+EPIC-00187,Build Customer auth flow,CAP-0023,Team Vega,R. Kumar,P0,21,2025-08-31,2025-10-08,,47,In Progress,4,0
+EPIC-00188,Automate Customer event consumer,CAP-0023,Team Atlas,P. Wong,P0,8,2025-09-07,2025-10-02,,31,In Review,4,2
+EPIC-00189,Decommission API ingestion job,CAP-0024,Team Cygnus,P. Wong,P1,8,2025-04-09,2025-05-18,,40,In Review,14,2
+EPIC-00190,Integrate API endpoint,CAP-0024,Team Atlas,M. Patel,P3,13,2025-03-21,2025-04-11,,20,In Progress,6,0
+EPIC-00191,Decommission API ingestion job,CAP-0024,Team Orion,M. Patel,P3,8,2025-03-28,2025-04-22,,25,In Progress,9,4
+EPIC-00192,Migrate API dashboard,CAP-0024,Team Orion,M. Patel,P1,13,2025-04-23,2025-06-04,,43,Not Started,8,2
+EPIC-00193,Build API batch job,CAP-0024,Team Nova,J. Chen,P0,5,2025-04-01,2025-05-11,2025-05-13,42,Done,3,3
+EPIC-00194,Implement API dashboard,CAP-0024,Team Lyra,P. Wong,P0,21,2025-03-15,2025-05-02,,47,Blocked,12,3
+EPIC-00195,Refactor API event consumer,CAP-0024,Team Atlas,A. Johnson,P3,3,2025-04-04,2025-05-11,2025-05-12,38,Done,9,0
+EPIC-00196,Refactor API event consumer,CAP-0024,Team Vega,J. Chen,P1,5,2025-03-03,2025-04-14,2025-04-13,41,Done,14,0
+EPIC-00197,Automate API batch job,CAP-0024,Team Cygnus,A. Johnson,P1,3,2025-04-09,2025-06-02,,54,In Progress,13,4
+EPIC-00198,Decommission API dashboard,CAP-0024,Team Cygnus,R. Kumar,P0,5,2025-04-08,2025-05-26,,46,In Review,10,2
+EPIC-00199,Implement API dashboard,CAP-0024,Team Draco,L. Nguyen,P1,13,2025-04-25,2025-06-19,,53,In Progress,3,1
+EPIC-00200,Decommission Order batch job,CAP-0025,Team Orion,J. Chen,P3,21,2025-05-12,2025-07-05,,54,Not Started,11,3
+EPIC-00201,Integrate Order dashboard,CAP-0025,Team Lyra,P. Wong,P2,3,2025-05-24,2025-07-08,,44,Not Started,12,0
+EPIC-00202,Migrate Order ingestion job,CAP-0025,Team Draco,M. Patel,P3,8,2025-06-16,2025-07-13,,27,In Review,6,2
+EPIC-00203,Implement Order service,CAP-0025,Team Phoenix,S. Rai,P3,5,2025-06-04,2025-07-17,2025-07-14,40,Done,8,2
+EPIC-00204,Integrate Order dashboard,CAP-0025,Team Orion,L. Nguyen,P1,3,2025-05-05,2025-06-05,,29,In Review,2,2
+EPIC-00205,Integrate Order dashboard,CAP-0025,Team Draco,J. Chen,P0,5,2025-06-10,2025-08-07,,61,Not Started,12,3
+EPIC-00206,Implement Order endpoint,CAP-0025,Team Nova,L. Nguyen,P0,13,2025-06-01,2025-06-29,,28,Not Started,1,3
+EPIC-00207,Build Order service,CAP-0025,Team Orion,L. Nguyen,P2,5,2025-05-09,2025-06-16,,36,Not Started,6,0
+EPIC-00208,Automate Order event consumer,CAP-0025,Team Draco,S. Rai,P1,13,2025-06-12,2025-07-04,,23,Not Started,9,1
+EPIC-00209,Integrate Order endpoint,CAP-0025,Team Cygnus,A. Johnson,P0,3,2025-06-04,2025-06-27,2025-06-29,25,Done,14,4
+EPIC-00210,Automate Order service,CAP-0025,Team Orion,M. Patel,P1,8,2025-06-01,2025-07-31,,60,In Review,13,3
+EPIC-00211,Decommission Provisioning auth flow,CAP-0026,Team Vega,A. Johnson,P3,8,2025-03-28,2025-05-27,,62,In Review,4,0
+EPIC-00212,Automate Provisioning event consumer,CAP-0026,Team Phoenix,J. Chen,P0,8,2025-03-05,2025-04-19,2025-04-19,45,Done,11,2
+EPIC-00213,Migrate Provisioning ingestion job,CAP-0026,Team Cygnus,P. Wong,P0,3,2025-04-14,2025-06-03,,50,In Progress,13,4
+EPIC-00214,Implement Provisioning dashboard,CAP-0026,Team Atlas,D. Singh,P3,13,2025-03-03,2025-03-19,,17,Blocked,5,3
+EPIC-00215,Integrate Provisioning auth flow,CAP-0026,Team Atlas,A. Johnson,P1,21,2025-03-24,2025-05-16,,51,In Review,2,0
+EPIC-00216,Decommission Inventory batch job,CAP-0027,Team Draco,D. Singh,P1,3,2025-06-12,2025-08-06,,57,In Review,12,0
+EPIC-00217,Implement Inventory ingestion job,CAP-0027,Team Vega,M. Patel,P0,3,2025-05-02,2025-06-14,,44,In Review,11,0
+EPIC-00218,Integrate Inventory service,CAP-0027,Team Orion,R. Kumar,P1,8,2025-05-05,2025-06-19,,49,Blocked,13,4
+EPIC-00219,Integrate Inventory event consumer,CAP-0027,Team Orion,D. Singh,P2,21,2025-06-19,2025-07-20,,32,Not Started,6,0
+EPIC-00220,Refactor Inventory batch job,CAP-0027,Team Atlas,S. Rai,P3,21,2025-05-31,2025-07-24,,51,Blocked,6,3
+EPIC-00221,Refactor Inventory endpoint,CAP-0027,Team Orion,S. Rai,P0,3,2025-05-11,2025-05-31,,21,In Progress,12,0
+EPIC-00222,Implement Inventory ingestion job,CAP-0027,Team Vega,D. Singh,P1,8,2025-05-18,2025-06-25,,41,Not Started,9,1
+EPIC-00223,Build Inventory batch job,CAP-0027,Team Vega,S. Rai,P1,5,2025-05-15,2025-06-15,,33,In Review,2,4
+EPIC-00224,Build Inventory service,CAP-0027,Team Phoenix,P. Wong,P0,8,2025-06-20,2025-08-02,,46,In Review,2,4
+EPIC-00225,Decommission Inventory event consumer,CAP-0028,Team Lyra,A. Johnson,P1,5,2025-06-28,2025-08-20,,52,Blocked,8,2
+EPIC-00226,Build Inventory service,CAP-0028,Team Phoenix,D. Singh,P2,3,2025-06-23,2025-08-10,,48,In Review,1,0
+EPIC-00227,Decommission Inventory endpoint,CAP-0028,Team Vega,R. Kumar,P0,3,2025-07-05,2025-08-19,,56,In Progress,12,0
+EPIC-00228,Automate Inventory auth flow,CAP-0028,Team Vega,J. Chen,P0,21,2025-07-05,2025-09-01,2025-09-15,72,Done,12,2
+EPIC-00229,Integrate Inventory event consumer,CAP-0028,Team Orion,D. Singh,P1,5,2025-07-04,2025-07-22,,22,Blocked,1,4
+EPIC-00230,Refactor Inventory event consumer,CAP-0028,Team Lyra,R. Kumar,P1,3,2025-06-29,2025-08-07,,41,In Review,8,2
+EPIC-00231,Migrate Inventory event consumer,CAP-0028,Team Vega,M. Patel,P3,13,2025-07-28,2025-09-17,,63,In Progress,2,0
+EPIC-00232,Implement Customer auth flow,CAP-0029,Team Draco,J. Chen,P0,5,2025-05-28,2025-06-24,,27,In Review,14,3
+EPIC-00233,Automate Customer batch job,CAP-0029,Team Lyra,A. Johnson,P2,13,2025-06-19,2025-08-10,,49,In Progress,2,2
+EPIC-00234,Integrate Customer dashboard,CAP-0029,Team Phoenix,A. Johnson,P0,13,2025-05-22,2025-06-16,2025-06-14,23,Done,9,6
+EPIC-00235,Automate Customer event consumer,CAP-0029,Team Atlas,D. Singh,P2,3,2025-05-14,2025-06-04,,19,In Progress,4,1
+EPIC-00236,Automate Customer service,CAP-0029,Team Lyra,L. Nguyen,P0,3,2025-05-07,2025-05-25,,17,In Progress,2,3
+EPIC-00237,Implement Customer endpoint,CAP-0029,Team Nova,S. Rai,P3,13,2025-07-04,2025-08-23,2025-09-04,62,Done,8,3
+EPIC-00238,Refactor Customer endpoint,CAP-0029,Team Orion,M. Patel,P0,21,2025-07-03,2025-07-28,,31,In Review,8,2
+EPIC-00239,Integrate Customer dashboard,CAP-0029,Team Vega,R. Kumar,P3,5,2025-06-06,2025-07-16,,43,Not Started,2,3
+EPIC-00240,Migrate Customer batch job,CAP-0029,Team Draco,S. Rai,P3,8,2025-07-01,2025-08-17,,58,Blocked,13,1
+EPIC-00241,Refactor Partner auth flow,CAP-0030,Team Nova,A. Johnson,P0,8,2025-03-23,2025-04-26,,34,Not Started,6,1
+EPIC-00242,Automate Partner ingestion job,CAP-0030,Team Phoenix,A. Johnson,P1,8,2025-03-24,2025-04-29,,38,In Progress,2,2
+EPIC-00243,Automate Partner endpoint,CAP-0030,Team Phoenix,L. Nguyen,P2,21,2025-03-27,2025-05-04,,38,In Progress,4,2
+EPIC-00244,Integrate Partner batch job,CAP-0030,Team Phoenix,P. Wong,P2,5,2025-03-13,2025-05-02,,51,In Progress,14,8
+EPIC-00245,Implement Partner service,CAP-0030,Team Nova,S. Rai,P2,21,2025-02-22,2025-03-22,,29,Blocked,8,0
+EPIC-00246,Automate Partner endpoint,CAP-0030,Team Vega,M. Patel,P1,3,2025-03-12,2025-05-10,,57,Not Started,1,2
+EPIC-00247,Implement Partner dashboard,CAP-0030,Team Cygnus,L. Nguyen,P1,5,2025-04-05,2025-05-31,,56,In Review,5,0
+EPIC-00248,Automate Partner batch job,CAP-0030,Team Draco,L. Nguyen,P1,21,2025-03-22,2025-05-16,,54,Blocked,13,4
+EPIC-00249,Build Partner dashboard,CAP-0030,Team Orion,D. Singh,P0,5,2025-04-06,2025-06-03,,57,Not Started,12,1
+EPIC-00250,Automate Partner auth flow,CAP-0030,Team Cygnus,J. Chen,P1,8,2025-03-05,2025-04-28,,55,In Progress,6,3
+EPIC-00251,Migrate Partner batch job,CAP-0030,Team Cygnus,R. Kumar,P1,5,2025-04-16,2025-05-05,2025-05-06,20,Done,1,2
+EPIC-00252,Refactor Provisioning event consumer,CAP-0031,Team Cygnus,D. Singh,P1,13,2025-04-04,2025-06-03,2025-05-31,57,Done,12,3
+EPIC-00253,Build Provisioning dashboard,CAP-0031,Team Nova,A. Johnson,P1,13,2025-05-02,2025-06-09,,36,Blocked,11,3
+EPIC-00254,Automate Provisioning event consumer,CAP-0031,Team Atlas,L. Nguyen,P1,13,2025-03-31,2025-05-02,,30,Not Started,2,2
+EPIC-00255,Integrate Provisioning service,CAP-0031,Team Orion,S. Rai,P3,5,2025-05-03,2025-05-22,2025-05-22,19,Done,12,4
+EPIC-00256,Migrate Provisioning service,CAP-0031,Team Draco,R. Kumar,P2,8,2025-04-04,2025-05-09,2025-05-08,34,Done,12,1
+EPIC-00257,Implement Routing ingestion job,CAP-0032,Team Atlas,L. Nguyen,P0,13,2025-08-31,2025-10-19,,61,In Progress,1,3
+EPIC-00258,Refactor Routing event consumer,CAP-0032,Team Atlas,J. Chen,P0,5,2025-09-06,2025-10-30,2025-11-12,67,Done,4,4
+EPIC-00259,Integrate Routing dashboard,CAP-0032,Team Orion,D. Singh,P3,13,2025-07-31,2025-09-13,,55,In Review,13,0
+EPIC-00260,Implement Routing batch job,CAP-0032,Team Lyra,L. Nguyen,P1,13,2025-08-29,2025-10-06,,47,In Review,7,1
+EPIC-00261,Refactor Routing ingestion job,CAP-0032,Team Phoenix,S. Rai,P1,3,2025-08-24,2025-09-23,,37,In Review,10,2
+EPIC-00262,Integrate Routing dashboard,CAP-0032,Team Atlas,S. Rai,P3,21,2025-09-15,2025-11-02,,60,Blocked,4,3
+EPIC-00263,Decommission Routing batch job,CAP-0032,Team Draco,R. Kumar,P0,13,2025-09-19,2025-11-02,,55,In Progress,8,4
+EPIC-00264,Implement Activation event consumer,CAP-0033,Team Orion,A. Johnson,P1,3,2025-05-31,2025-06-25,,27,In Progress,13,1
+EPIC-00265,Implement Activation batch job,CAP-0033,Team Draco,L. Nguyen,P0,3,2025-05-30,2025-06-25,,28,Blocked,5,1
+EPIC-00266,Decommission Activation ingestion job,CAP-0033,Team Draco,S. Rai,P3,3,2025-06-07,2025-07-11,2025-07-13,36,Done,14,4
+EPIC-00267,Migrate Activation endpoint,CAP-0033,Team Draco,J. Chen,P2,21,2025-06-08,2025-07-29,,52,Not Started,10,0
+EPIC-00268,Refactor Telemetry ingestion job,CAP-0034,Team Draco,R. Kumar,P3,5,2025-06-09,2025-07-24,,46,Not Started,3,3
+EPIC-00269,Implement Telemetry ingestion job,CAP-0034,Team Draco,L. Nguyen,P0,8,2025-06-24,2025-07-29,2025-07-30,36,Done,5,0
+EPIC-00270,Refactor Telemetry dashboard,CAP-0034,Team Lyra,R. Kumar,P3,8,2025-06-21,2025-08-05,,48,In Progress,3,0
+EPIC-00271,Integrate Telemetry ingestion job,CAP-0034,Team Lyra,D. Singh,P3,21,2025-06-06,2025-07-31,,52,In Progress,14,3
+EPIC-00272,Automate Telemetry service,CAP-0034,Team Cygnus,S. Rai,P1,5,2025-05-31,2025-06-24,2025-06-23,23,Done,3,4
+EPIC-00273,Automate Telemetry service,CAP-0034,Team Vega,L. Nguyen,P3,21,2025-05-14,2025-05-30,,16,In Progress,5,2
+EPIC-00274,Integrate Telemetry service,CAP-0034,Team Draco,M. Patel,P3,21,2025-06-11,2025-06-26,,14,Blocked,8,3
+EPIC-00275,Refactor Telemetry endpoint,CAP-0034,Team Cygnus,D. Singh,P0,5,2025-06-21,2025-07-21,,31,In Review,1,0
+EPIC-00276,Automate Telemetry endpoint,CAP-0034,Team Vega,S. Rai,P0,13,2025-06-09,2025-07-07,2025-07-08,29,Done,9,2
+EPIC-00277,Decommission Settlement event consumer,CAP-0035,Team Orion,D. Singh,P2,13,2025-04-02,2025-04-30,,27,In Review,7,2
+EPIC-00278,Migrate Settlement ingestion job,CAP-0035,Team Lyra,J. Chen,P0,21,2025-04-21,2025-06-17,2025-06-18,58,Done,10,4
+EPIC-00279,Decommission Settlement batch job,CAP-0035,Team Cygnus,L. Nguyen,P2,8,2025-05-10,2025-07-01,2025-06-30,51,Done,2,0
+EPIC-00280,Refactor Settlement batch job,CAP-0035,Team Lyra,A. Johnson,P0,21,2025-05-17,2025-07-11,,54,Blocked,13,1
+EPIC-00281,Integrate Settlement dashboard,CAP-0035,Team Draco,D. Singh,P3,13,2025-05-15,2025-06-06,,23,In Review,5,3
+EPIC-00282,Decommission Settlement batch job,CAP-0035,Team Phoenix,P. Wong,P2,21,2025-05-08,2025-06-03,,26,Blocked,11,2
+EPIC-00283,Automate API batch job,CAP-0036,Team Orion,P. Wong,P1,8,2025-08-01,2025-09-19,,61,In Review,2,1
+EPIC-00284,Integrate API dashboard,CAP-0036,Team Orion,R. Kumar,P3,8,2025-07-17,2025-08-05,,23,In Review,4,1
+EPIC-00285,Refactor API auth flow,CAP-0036,Team Cygnus,J. Chen,P3,5,2025-06-24,2025-08-06,,46,Not Started,14,3
+EPIC-00286,Automate API batch job,CAP-0036,Team Atlas,A. Johnson,P2,13,2025-06-30,2025-08-16,,46,In Progress,3,0
+EPIC-00287,Migrate API dashboard,CAP-0036,Team Nova,L. Nguyen,P1,8,2025-07-31,2025-09-28,,73,Not Started,8,1
+EPIC-00288,Implement API ingestion job,CAP-0036,Team Phoenix,M. Patel,P3,3,2025-06-23,2025-07-20,,28,Blocked,13,2
+EPIC-00289,Decommission API ingestion job,CAP-0036,Team Orion,D. Singh,P0,3,2025-07-16,2025-08-26,2025-09-05,51,Done,8,3
+EPIC-00290,Integrate API dashboard,CAP-0036,Team Vega,S. Rai,P0,5,2025-08-05,2025-08-19,,17,Blocked,4,2
+EPIC-00291,Refactor Activation endpoint,CAP-0037,Team Cygnus,M. Patel,P0,3,2025-09-24,2025-11-01,,47,Blocked,5,4
+EPIC-00292,Refactor Activation ingestion job,CAP-0037,Team Lyra,M. Patel,P2,13,2025-11-03,2025-12-20,2025-12-21,48,Done,11,2
+EPIC-00293,Automate Activation endpoint,CAP-0037,Team Cygnus,M. Patel,P1,3,2025-09-28,2025-11-06,,48,In Progress,4,0
+EPIC-00294,Implement Activation dashboard,CAP-0037,Team Orion,S. Rai,P0,3,2025-11-02,2025-12-27,,58,In Review,13,3
+EPIC-00295,Implement Activation batch job,CAP-0037,Team Phoenix,R. Kumar,P3,5,2025-09-25,2025-11-04,2025-11-14,50,Done,2,6
+EPIC-00296,Integrate Activation batch job,CAP-0037,Team Vega,M. Patel,P3,3,2025-10-28,2025-11-11,,13,Blocked,5,0
+EPIC-00297,Refactor Activation service,CAP-0037,Team Atlas,R. Kumar,P1,8,2025-11-07,2025-11-27,,20,In Progress,13,4
+EPIC-00298,Migrate Order service,CAP-0038,Team Lyra,A. Johnson,P0,3,2025-08-24,2025-10-08,2025-10-19,56,Done,6,1
+EPIC-00299,Implement Order event consumer,CAP-0038,Team Atlas,J. Chen,P0,8,2025-08-25,2025-10-20,,70,In Progress,2,3
+EPIC-00300,Build Order dashboard,CAP-0038,Team Vega,M. Patel,P0,8,2025-08-05,2025-09-17,,53,Not Started,14,0
+EPIC-00301,Automate Order batch job,CAP-0038,Team Cygnus,S. Rai,P0,5,2025-08-09,2025-09-19,,51,Not Started,14,0
+EPIC-00302,Refactor Order dashboard,CAP-0038,Team Orion,J. Chen,P2,8,2025-09-15,2025-10-27,,52,In Review,12,4
+EPIC-00303,Implement Order ingestion job,CAP-0038,Team Orion,P. Wong,P3,5,2025-08-14,2025-09-26,2025-10-06,53,Done,12,2
+EPIC-00304,Migrate Order batch job,CAP-0038,Team Atlas,P. Wong,P3,5,2025-09-04,2025-09-21,,21,Not Started,7,1
+EPIC-00305,Automate Order dashboard,CAP-0038,Team Draco,J. Chen,P3,13,2025-08-28,2025-09-12,2025-09-15,18,Done,8,1
+EPIC-00306,Implement Order dashboard,CAP-0038,Team Phoenix,A. Johnson,P2,21,2025-08-30,2025-10-03,,42,Blocked,13,0
+EPIC-00307,Build Order batch job,CAP-0038,Team Atlas,D. Singh,P1,21,2025-09-04,2025-10-03,,36,In Review,11,3
+EPIC-00308,Integrate Routing endpoint,CAP-0039,Team Phoenix,P. Wong,P2,5,2025-09-29,2025-11-12,,55,In Progress,2,6
+EPIC-00309,Refactor Routing service,CAP-0039,Team Cygnus,A. Johnson,P0,13,2025-09-29,2025-10-27,2025-11-03,35,Done,7,4
+EPIC-00310,Automate Routing auth flow,CAP-0039,Team Nova,J. Chen,P3,3,2025-09-25,2025-10-14,2025-10-18,23,Done,6,3
+EPIC-00311,Build Routing ingestion job,CAP-0039,Team Atlas,J. Chen,P2,21,2025-08-30,2025-10-18,,61,Not Started,14,4
+EPIC-00312,Integrate Settlement batch job,CAP-0040,Team Vega,P. Wong,P2,21,2025-10-13,2025-11-17,,35,In Progress,14,0
+EPIC-00313,Integrate Settlement batch job,CAP-0040,Team Nova,L. Nguyen,P2,8,2025-10-07,2025-12-05,,60,In Progress,1,0
+EPIC-00314,Integrate Settlement service,CAP-0040,Team Cygnus,D. Singh,P0,8,2025-09-16,2025-10-10,,30,In Progress,14,3
+EPIC-00315,Migrate Settlement service,CAP-0040,Team Vega,D. Singh,P0,21,2025-11-12,2025-12-21,,38,In Review,2,1
+EPIC-00316,Automate Settlement ingestion job,CAP-0040,Team Atlas,S. Rai,P0,21,2025-10-13,2025-12-08,,58,In Progress,8,4
+EPIC-00317,Automate Settlement auth flow,CAP-0040,Team Draco,M. Patel,P0,13,2025-10-14,2025-11-29,,49,Blocked,3,1
+EPIC-00318,Decommission Settlement ingestion job,CAP-0040,Team Cygnus,L. Nguyen,P2,13,2025-10-10,2025-12-01,,56,In Review,7,1
+EPIC-00319,Migrate Settlement ingestion job,CAP-0040,Team Orion,L. Nguyen,P1,5,2025-10-22,2025-12-19,,62,In Review,14,4
+EPIC-00320,Decommission Settlement batch job,CAP-0040,Team Vega,L. Nguyen,P0,8,2025-10-02,2025-11-28,,57,In Progress,9,1
+EPIC-00321,Decommission Settlement auth flow,CAP-0040,Team Nova,D. Singh,P0,21,2025-11-13,2026-01-08,,59,In Review,14,4
+EPIC-00322,Implement Settlement ingestion job,CAP-0040,Team Atlas,M. Patel,P2,8,2025-09-23,2025-10-10,,21,In Progress,5,0
+EPIC-00323,Automate Settlement service,CAP-0040,Team Orion,P. Wong,P0,21,2025-10-28,2025-11-29,,31,Not Started,6,4
+EPIC-00324,Integrate API batch job,CAP-0041,Team Vega,D. Singh,P3,8,2025-10-17,2025-11-24,,37,Not Started,7,2
+EPIC-00325,Implement API batch job,CAP-0041,Team Phoenix,A. Johnson,P2,21,2025-09-28,2025-10-24,2025-10-30,32,Done,14,8
+EPIC-00326,Automate API batch job,CAP-0041,Team Vega,J. Chen,P1,5,2025-09-24,2025-10-26,,40,In Progress,11,3
+EPIC-00327,Build API service,CAP-0041,Team Atlas,R. Kumar,P0,8,2025-10-09,2025-11-09,,32,In Progress,10,1
+EPIC-00328,Integrate API endpoint,CAP-0041,Team Nova,R. Kumar,P3,21,2025-09-14,2025-10-07,,28,Blocked,1,2
+EPIC-00329,Implement API event consumer,CAP-0041,Team Cygnus,M. Patel,P3,21,2025-10-27,2025-11-30,,34,Blocked,2,1
+EPIC-00330,Implement API dashboard,CAP-0041,Team Draco,R. Kumar,P1,21,2025-09-26,2025-10-23,,33,In Review,6,2
+EPIC-00331,Decommission API event consumer,CAP-0041,Team Nova,A. Johnson,P0,8,2025-10-30,2025-12-24,2025-12-21,52,Done,4,2
+EPIC-00332,Automate API service,CAP-0041,Team Draco,L. Nguyen,P3,13,2025-10-06,2025-11-05,,30,Not Started,9,2
+EPIC-00333,Refactor API batch job,CAP-0041,Team Phoenix,M. Patel,P0,3,2025-09-24,2025-10-28,,42,Not Started,2,8
+EPIC-00334,Integrate API batch job,CAP-0041,Team Vega,D. Singh,P0,5,2025-10-31,2025-11-27,,29,Not Started,4,3
+EPIC-00335,Build API batch job,CAP-0041,Team Phoenix,R. Kumar,P0,21,2025-10-03,2025-10-19,,15,In Progress,13,0
+EPIC-00336,Build Notification ingestion job,CAP-0042,Team Lyra,S. Rai,P3,3,2025-08-19,2025-10-12,2025-10-25,67,Done,6,3
+EPIC-00337,Integrate Notification batch job,CAP-0042,Team Phoenix,J. Chen,P2,21,2025-08-30,2025-09-17,,22,Not Started,12,8
+EPIC-00338,Refactor Notification event consumer,CAP-0042,Team Atlas,P. Wong,P3,13,2025-09-03,2025-10-06,,41,Not Started,5,4
+EPIC-00339,Build Notification endpoint,CAP-0042,Team Phoenix,R. Kumar,P1,8,2025-08-25,2025-09-22,2025-09-29,35,Done,13,2
+EPIC-00340,Implement Notification auth flow,CAP-0042,Team Cygnus,S. Rai,P3,21,2025-09-15,2025-11-03,,61,Not Started,1,1
+EPIC-00341,Refactor Notification endpoint,CAP-0042,Team Atlas,M. Patel,P1,5,2025-09-07,2025-11-06,,75,In Progress,7,2
+EPIC-00342,Decommission Notification event consumer,CAP-0042,Team Vega,S. Rai,P3,21,2025-08-07,2025-09-02,,32,In Progress,11,0
+EPIC-00343,Integrate Settlement service,CAP-0043,Team Lyra,L. Nguyen,P2,5,2025-08-03,2025-08-23,,25,Blocked,8,1
+EPIC-00344,Implement Settlement dashboard,CAP-0043,Team Vega,P. Wong,P2,21,2025-08-26,2025-09-13,,22,In Review,8,1
+EPIC-00345,Integrate Settlement auth flow,CAP-0043,Team Lyra,L. Nguyen,P3,5,2025-07-27,2025-09-15,,62,In Review,13,4
+EPIC-00346,Refactor Settlement endpoint,CAP-0043,Team Phoenix,L. Nguyen,P1,8,2025-09-06,2025-10-04,,35,In Review,14,6
+EPIC-00347,Build Settlement ingestion job,CAP-0043,Team Nova,M. Patel,P0,8,2025-08-09,2025-09-11,,41,Blocked,2,3
+EPIC-00348,Refactor Routing batch job,CAP-0044,Team Vega,S. Rai,P3,21,2025-09-19,2025-11-12,,67,Not Started,1,0
+EPIC-00349,Implement Routing auth flow,CAP-0044,Team Vega,M. Patel,P2,13,2025-08-10,2025-09-27,2025-10-09,60,Done,11,4
+EPIC-00350,Automate Routing auth flow,CAP-0044,Team Vega,J. Chen,P3,8,2025-09-09,2025-10-11,2025-10-19,40,Done,9,1
+EPIC-00351,Integrate Routing endpoint,CAP-0044,Team Phoenix,P. Wong,P1,5,2025-09-17,2025-11-09,,66,Blocked,3,2
+EPIC-00352,Integrate Routing batch job,CAP-0044,Team Orion,P. Wong,P1,3,2025-08-24,2025-09-29,,45,In Progress,13,0
+EPIC-00353,Refactor Routing endpoint,CAP-0044,Team Lyra,L. Nguyen,P3,13,2025-07-27,2025-09-21,,70,Blocked,13,1
+EPIC-00354,Implement Telemetry batch job,CAP-0045,Team Phoenix,R. Kumar,P1,13,2025-05-07,2025-05-27,,21,In Review,14,8
+EPIC-00355,Refactor Telemetry auth flow,CAP-0045,Team Draco,D. Singh,P2,8,2025-05-28,2025-06-15,,18,In Progress,9,3
+EPIC-00356,Automate Telemetry ingestion job,CAP-0045,Team Nova,A. Johnson,P0,21,2025-06-12,2025-08-03,2025-07-31,49,Done,3,1
+EPIC-00357,Migrate Telemetry endpoint,CAP-0045,Team Lyra,L. Nguyen,P0,13,2025-04-28,2025-05-22,,24,In Progress,7,0
+EPIC-00358,Build Telemetry endpoint,CAP-0045,Team Nova,S. Rai,P1,21,2025-05-24,2025-06-17,,25,Not Started,4,3
+EPIC-00359,Migrate Telemetry batch job,CAP-0045,Team Orion,R. Kumar,P1,21,2025-05-19,2025-06-04,,17,Not Started,3,1
+EPIC-00360,Decommission Telemetry auth flow,CAP-0045,Team Draco,P. Wong,P3,13,2025-05-27,2025-06-11,,16,Not Started,4,2
+EPIC-00361,Migrate Telemetry event consumer,CAP-0045,Team Orion,R. Kumar,P1,8,2025-05-13,2025-07-04,,50,In Progress,10,4
+EPIC-00362,Decommission Telemetry auth flow,CAP-0045,Team Nova,A. Johnson,P3,5,2025-04-21,2025-05-19,,28,Not Started,1,1
+EPIC-00363,Migrate Telemetry ingestion job,CAP-0045,Team Atlas,J. Chen,P0,13,2025-06-13,2025-08-05,,55,Blocked,13,4
+EPIC-00364,Decommission Telemetry auth flow,CAP-0045,Team Orion,L. Nguyen,P0,21,2025-06-08,2025-06-22,,15,Blocked,7,3
+EPIC-00365,Automate Activation ingestion job,CAP-0046,Team Vega,M. Patel,P2,13,2025-03-16,2025-04-23,,38,Not Started,7,4
+EPIC-00366,Automate Activation service,CAP-0046,Team Vega,S. Rai,P0,21,2025-02-12,2025-04-05,,56,In Review,4,3
+EPIC-00367,Decommission Activation service,CAP-0046,Team Atlas,J. Chen,P1,13,2025-02-18,2025-04-14,2025-04-12,53,Done,6,2
+EPIC-00368,Refactor Activation event consumer,CAP-0046,Team Lyra,D. Singh,P1,13,2025-02-28,2025-04-10,,42,In Review,11,4
+EPIC-00369,Migrate Activation dashboard,CAP-0046,Team Nova,D. Singh,P1,3,2025-03-01,2025-04-19,,50,Blocked,6,2
+EPIC-00370,Build Activation event consumer,CAP-0046,Team Vega,L. Nguyen,P0,5,2025-03-10,2025-04-03,2025-04-02,23,Done,13,4
+EPIC-00371,Integrate Activation service,CAP-0046,Team Draco,J. Chen,P0,8,2025-03-17,2025-04-05,,20,Blocked,7,3
+EPIC-00372,Refactor Activation service,CAP-0046,Team Vega,R. Kumar,P0,5,2025-03-04,2025-03-20,,16,Blocked,11,3
+EPIC-00373,Build Activation service,CAP-0046,Team Nova,S. Rai,P1,21,2025-02-06,2025-04-03,,61,In Review,4,4
+EPIC-00374,Integrate Activation service,CAP-0046,Team Orion,D. Singh,P2,13,2025-02-17,2025-03-18,,30,Not Started,5,1
+EPIC-00375,Decommission Inventory service,CAP-0047,Team Vega,L. Nguyen,P2,8,2025-04-27,2025-06-25,,56,Blocked,5,0
+EPIC-00376,Decommission Inventory endpoint,CAP-0047,Team Vega,J. Chen,P0,21,2025-04-09,2025-05-18,,40,In Progress,7,2
+EPIC-00377,Refactor Inventory service,CAP-0047,Team Lyra,P. Wong,P3,21,2025-05-01,2025-06-16,,50,Blocked,5,4
+EPIC-00378,Automate Inventory endpoint,CAP-0047,Team Nova,S. Rai,P3,3,2025-04-28,2025-06-02,2025-06-05,38,Done,10,3
+EPIC-00379,Implement Inventory ingestion job,CAP-0047,Team Lyra,L. Nguyen,P0,8,2025-04-20,2025-05-18,,29,In Review,7,1
+EPIC-00380,Refactor Inventory service,CAP-0047,Team Vega,M. Patel,P3,8,2025-04-05,2025-06-01,,60,Not Started,9,2
+EPIC-00381,Migrate Inventory auth flow,CAP-0047,Team Cygnus,A. Johnson,P1,5,2025-03-28,2025-04-22,2025-04-24,27,Done,12,1
+EPIC-00382,Migrate Inventory endpoint,CAP-0047,Team Lyra,J. Chen,P0,3,2025-03-23,2025-04-21,,31,In Progress,13,2
+EPIC-00383,Decommission Inventory service,CAP-0047,Team Nova,L. Nguyen,P3,21,2025-04-28,2025-06-15,,52,In Review,10,3
+EPIC-00384,Build Inventory endpoint,CAP-0047,Team Lyra,S. Rai,P3,13,2025-04-28,2025-06-13,,45,Blocked,3,1
+EPIC-00385,Decommission Order dashboard,CAP-0048,Team Phoenix,P. Wong,P2,3,2025-04-02,2025-05-29,,60,Not Started,12,6
+EPIC-00386,Integrate Order endpoint,CAP-0048,Team Phoenix,R. Kumar,P1,21,2025-04-01,2025-05-22,,49,Blocked,14,4
+EPIC-00387,Migrate Order dashboard,CAP-0048,Team Lyra,A. Johnson,P3,8,2025-04-07,2025-05-30,2025-05-30,53,Done,7,1
+EPIC-00388,Automate Order ingestion job,CAP-0048,Team Cygnus,A. Johnson,P0,8,2025-03-25,2025-05-06,,41,Blocked,11,1
+EPIC-00389,Decommission Order ingestion job,CAP-0048,Team Vega,S. Rai,P1,13,2025-05-01,2025-06-08,2025-06-07,37,Done,13,1
+EPIC-00390,Migrate Order event consumer,CAP-0048,Team Nova,R. Kumar,P0,13,2025-04-17,2025-06-03,2025-06-04,48,Done,5,2
+EPIC-00391,Integrate Order endpoint,CAP-0048,Team Atlas,L. Nguyen,P2,8,2025-03-11,2025-04-07,,28,Not Started,8,3
+EPIC-00392,Decommission Order auth flow,CAP-0048,Team Cygnus,A. Johnson,P1,8,2025-05-06,2025-06-05,,30,Not Started,6,3
+EPIC-00393,Refactor Order batch job,CAP-0048,Team Cygnus,R. Kumar,P3,5,2025-04-09,2025-05-24,,47,Not Started,7,3
+EPIC-00394,Integrate Order event consumer,CAP-0048,Team Orion,J. Chen,P0,5,2025-05-06,2025-06-10,,35,Blocked,7,4
+EPIC-00395,Migrate Order dashboard,CAP-0048,Team Cygnus,D. Singh,P2,13,2025-03-28,2025-05-22,,54,Blocked,11,2
+EPIC-00396,Integrate Order auth flow,CAP-0048,Team Cygnus,A. Johnson,P2,3,2025-04-10,2025-05-22,,42,Not Started,3,1
+EPIC-00397,Build API service,CAP-0049,Team Orion,S. Rai,P3,21,2025-04-01,2025-04-19,,19,Blocked,1,3
+EPIC-00398,Implement API dashboard,CAP-0049,Team Atlas,A. Johnson,P2,13,2025-05-04,2025-05-27,,22,In Review,4,3
+EPIC-00399,Migrate API auth flow,CAP-0049,Team Orion,P. Wong,P3,21,2025-05-18,2025-06-11,,22,In Review,14,2
+EPIC-00400,Decommission API ingestion job,CAP-0049,Team Lyra,D. Singh,P2,8,2025-04-03,2025-05-31,,59,Blocked,8,4
+EPIC-00401,Decommission API endpoint,CAP-0049,Team Nova,M. Patel,P2,3,2025-05-16,2025-06-04,2025-06-04,19,Done,5,2
+EPIC-00402,Decommission API event consumer,CAP-0049,Team Phoenix,P. Wong,P3,8,2025-05-13,2025-06-04,,22,Blocked,1,6
+EPIC-00403,Automate API ingestion job,CAP-0049,Team Phoenix,A. Johnson,P3,21,2025-05-16,2025-06-17,,33,Blocked,6,0
+EPIC-00404,Migrate Telemetry endpoint,CAP-0050,Team Draco,J. Chen,P3,5,2025-03-31,2025-05-25,,55,In Progress,5,3
+EPIC-00405,Refactor Telemetry batch job,CAP-0050,Team Lyra,J. Chen,P1,5,2025-04-02,2025-05-20,,51,In Progress,14,3
+EPIC-00406,Implement Telemetry batch job,CAP-0050,Team Lyra,L. Nguyen,P0,5,2025-03-15,2025-05-07,2025-05-07,53,Done,4,4
+EPIC-00407,Decommission Telemetry service,CAP-0050,Team Phoenix,S. Rai,P1,3,2025-02-25,2025-03-17,2025-03-16,19,Done,12,2
+EPIC-00408,Implement Telemetry ingestion job,CAP-0050,Team Orion,S. Rai,P2,3,2025-02-27,2025-04-03,,35,In Review,8,3
+EPIC-00409,Implement Telemetry dashboard,CAP-0050,Team Orion,R. Kumar,P3,3,2025-04-04,2025-05-13,,37,In Progress,4,3
+EPIC-00410,Automate Telemetry batch job,CAP-0050,Team Atlas,S. Rai,P1,13,2025-03-01,2025-04-08,,40,In Progress,12,3
+EPIC-00411,Decommission Telemetry batch job,CAP-0050,Team Atlas,S. Rai,P0,8,2025-02-27,2025-04-12,,44,In Review,3,2
+EPIC-00412,Integrate Telemetry dashboard,CAP-0050,Team Nova,D. Singh,P2,3,2025-02-26,2025-04-04,,40,Not Started,4,1
+EPIC-00413,Automate Telemetry dashboard,CAP-0050,Team Orion,P. Wong,P1,8,2025-03-23,2025-04-13,,21,Not Started,1,1
+EPIC-00414,Migrate Inventory ingestion job,CAP-0051,Team Vega,M. Patel,P0,5,2025-03-18,2025-05-14,,59,Not Started,6,0
+EPIC-00415,Migrate Inventory dashboard,CAP-0051,Team Nova,D. Singh,P2,5,2025-04-17,2025-06-11,,58,In Progress,1,3
+EPIC-00416,Implement Inventory ingestion job,CAP-0051,Team Lyra,M. Patel,P2,8,2025-04-27,2025-06-08,2025-06-09,43,Done,4,4
+EPIC-00417,Refactor Inventory event consumer,CAP-0051,Team Nova,M. Patel,P3,8,2025-05-05,2025-06-26,,56,In Progress,2,4
+EPIC-00418,Decommission Inventory dashboard,CAP-0051,Team Lyra,M. Patel,P0,21,2025-04-11,2025-04-25,2025-04-25,14,Done,12,4
+EPIC-00419,Refactor Customer batch job,CAP-0052,Team Vega,P. Wong,P1,21,2025-03-25,2025-05-20,,61,In Progress,9,3
+EPIC-00420,Refactor Customer ingestion job,CAP-0052,Team Lyra,M. Patel,P1,3,2025-05-01,2025-06-04,,32,Not Started,1,4
+EPIC-00421,Implement Customer ingestion job,CAP-0052,Team Vega,R. Kumar,P0,8,2025-04-02,2025-04-22,2025-04-21,19,Done,9,3
+EPIC-00422,Decommission Customer batch job,CAP-0052,Team Vega,J. Chen,P3,3,2025-03-25,2025-04-08,2025-04-09,15,Done,14,1
+EPIC-00423,Decommission Customer batch job,CAP-0052,Team Cygnus,S. Rai,P0,8,2025-05-20,2025-06-29,,42,Blocked,5,0
+EPIC-00424,Migrate Customer auth flow,CAP-0052,Team Atlas,A. Johnson,P1,21,2025-03-27,2025-04-16,2025-04-17,21,Done,4,4
+EPIC-00425,Decommission Customer batch job,CAP-0052,Team Orion,P. Wong,P3,3,2025-04-25,2025-06-04,,42,In Review,11,4
+EPIC-00426,Automate Customer endpoint,CAP-0052,Team Orion,P. Wong,P2,8,2025-04-25,2025-06-03,,40,Blocked,10,1
+EPIC-00427,Automate Customer dashboard,CAP-0052,Team Cygnus,A. Johnson,P3,21,2025-04-16,2025-06-09,,54,Blocked,4,2
+EPIC-00428,Build Provisioning ingestion job,CAP-0053,Team Cygnus,S. Rai,P1,8,2025-09-28,2025-10-12,,17,In Review,10,0
+EPIC-00429,Refactor Provisioning endpoint,CAP-0053,Team Phoenix,M. Patel,P0,3,2025-09-16,2025-10-20,,42,In Review,9,0
+EPIC-00430,Refactor Provisioning endpoint,CAP-0053,Team Nova,A. Johnson,P2,8,2025-09-11,2025-10-11,,37,Blocked,4,2
+EPIC-00431,Decommission Provisioning ingestion job,CAP-0053,Team Atlas,P. Wong,P0,21,2025-10-09,2025-11-05,2025-11-06,28,Done,3,2
+EPIC-00432,Implement Provisioning batch job,CAP-0053,Team Lyra,D. Singh,P3,3,2025-10-24,2025-12-13,,50,In Review,6,0
+EPIC-00433,Integrate Provisioning batch job,CAP-0053,Team Vega,S. Rai,P2,21,2025-10-27,2025-12-18,,56,Not Started,5,3
+EPIC-00434,Refactor Provisioning auth flow,CAP-0053,Team Orion,J. Chen,P1,13,2025-10-17,2025-11-14,2025-11-13,27,Done,13,3
+EPIC-00435,Automate Provisioning ingestion job,CAP-0053,Team Lyra,S. Rai,P3,8,2025-09-12,2025-10-04,,27,Not Started,8,2
+EPIC-00436,Decommission Routing ingestion job,CAP-0054,Team Draco,A. Johnson,P3,13,2025-09-15,2025-11-12,,72,In Progress,8,1
+EPIC-00437,Decommission Routing auth flow,CAP-0054,Team Vega,R. Kumar,P3,8,2025-09-13,2025-10-30,,58,In Progress,2,1
+EPIC-00438,Implement Routing batch job,CAP-0054,Team Atlas,L. Nguyen,P2,21,2025-08-23,2025-10-03,,51,In Review,4,2
+EPIC-00439,Automate Routing dashboard,CAP-0054,Team Phoenix,M. Patel,P3,3,2025-08-07,2025-09-12,2025-09-21,45,Done,10,8
+EPIC-00440,Migrate Routing batch job,CAP-0054,Team Vega,S. Rai,P1,21,2025-08-20,2025-09-12,,28,Not Started,12,0
+EPIC-00441,Implement Partner dashboard,CAP-0055,Team Lyra,A. Johnson,P1,5,2025-10-10,2025-10-31,,20,Not Started,6,3
+EPIC-00442,Decommission Partner ingestion job,CAP-0055,Team Lyra,S. Rai,P2,5,2025-10-05,2025-12-04,2025-12-09,65,Done,10,0
+EPIC-00443,Refactor Partner endpoint,CAP-0055,Team Phoenix,S. Rai,P0,13,2025-10-16,2025-12-13,2025-12-15,60,Done,11,0
+EPIC-00444,Integrate Partner event consumer,CAP-0055,Team Lyra,D. Singh,P1,13,2025-10-24,2025-12-19,,56,Not Started,5,0
+EPIC-00445,Refactor Partner ingestion job,CAP-0055,Team Atlas,P. Wong,P0,3,2025-10-21,2025-12-12,,53,In Progress,9,1
+EPIC-00446,Decommission Partner dashboard,CAP-0055,Team Vega,L. Nguyen,P2,8,2025-09-17,2025-11-01,,56,In Progress,1,3
+EPIC-00447,Decommission Customer dashboard,CAP-0056,Team Vega,S. Rai,P2,5,2025-09-07,2025-09-24,2025-09-28,21,Done,14,2
+EPIC-00448,Refactor Customer ingestion job,CAP-0056,Team Orion,A. Johnson,P3,5,2025-08-29,2025-09-20,2025-09-25,27,Done,9,0
+EPIC-00449,Build Customer dashboard,CAP-0056,Team Orion,M. Patel,P1,5,2025-09-14,2025-11-05,2025-11-18,65,Done,9,2
+EPIC-00450,Automate Customer endpoint,CAP-0056,Team Vega,M. Patel,P1,8,2025-08-06,2025-10-03,,72,In Progress,7,4
+EPIC-00451,Decommission Customer auth flow,CAP-0056,Team Atlas,M. Patel,P0,8,2025-09-16,2025-11-15,,75,In Progress,6,0
+EPIC-00452,Build Customer dashboard,CAP-0056,Team Draco,A. Johnson,P0,5,2025-08-15,2025-10-08,,67,In Progress,13,2
+EPIC-00453,Implement Customer event consumer,CAP-0056,Team Orion,A. Johnson,P1,5,2025-08-26,2025-10-18,,66,Blocked,10,2
+EPIC-00454,Refactor Customer service,CAP-0056,Team Phoenix,P. Wong,P2,5,2025-08-31,2025-10-14,,55,Blocked,14,2
+EPIC-00455,Build Activation endpoint,CAP-0057,Team Nova,S. Rai,P2,13,2025-07-16,2025-08-11,,32,Not Started,7,1
+EPIC-00456,Integrate Activation batch job,CAP-0057,Team Vega,P. Wong,P2,13,2025-07-18,2025-08-14,,33,In Progress,8,0
+EPIC-00457,Build Activation ingestion job,CAP-0057,Team Vega,L. Nguyen,P3,21,2025-08-24,2025-09-09,2025-09-13,20,Done,12,4
+EPIC-00458,Decommission Activation service,CAP-0057,Team Phoenix,D. Singh,P0,21,2025-08-03,2025-09-15,,53,In Progress,9,0
+EPIC-00459,Decommission Activation event consumer,CAP-0057,Team Draco,D. Singh,P2,8,2025-08-15,2025-09-01,,21,In Review,8,1
+EPIC-00460,Migrate Activation ingestion job,CAP-0057,Team Nova,P. Wong,P3,3,2025-07-24,2025-09-15,,66,Blocked,3,0
+EPIC-00461,Migrate Activation event consumer,CAP-0057,Team Atlas,D. Singh,P2,13,2025-08-12,2025-10-09,,72,In Progress,7,4
+EPIC-00462,Migrate Activation ingestion job,CAP-0057,Team Phoenix,R. Kumar,P2,5,2025-08-12,2025-10-10,2025-10-24,73,Done,2,2
+EPIC-00463,Implement Activation service,CAP-0057,Team Atlas,D. Singh,P1,13,2025-08-20,2025-10-01,,52,Not Started,9,2
+EPIC-00464,Implement Activation event consumer,CAP-0057,Team Draco,M. Patel,P1,3,2025-07-16,2025-08-20,,43,In Progress,3,4
+EPIC-00465,Refactor Notification batch job,CAP-0058,Team Lyra,A. Johnson,P0,21,2025-11-11,2025-12-23,,41,Not Started,3,1
+EPIC-00466,Implement Notification ingestion job,CAP-0058,Team Lyra,A. Johnson,P1,21,2025-10-24,2025-12-08,,46,Blocked,8,0
+EPIC-00467,Build Notification ingestion job,CAP-0058,Team Nova,R. Kumar,P1,3,2025-10-21,2025-11-09,,19,In Progress,9,0
+EPIC-00468,Migrate Notification service,CAP-0058,Team Orion,R. Kumar,P2,3,2025-11-03,2025-12-09,,34,Blocked,14,0
+EPIC-00469,Implement Notification ingestion job,CAP-0058,Team Phoenix,M. Patel,P3,21,2025-10-04,2025-10-28,,25,Blocked,10,8
+EPIC-00470,Implement Notification service,CAP-0058,Team Cygnus,D. Singh,P0,8,2025-11-11,2025-12-14,,32,Not Started,13,3
+EPIC-00471,Migrate Notification service,CAP-0058,Team Nova,A. Johnson,P0,3,2025-11-06,2025-12-07,,30,Blocked,4,3
+EPIC-00472,Build Notification batch job,CAP-0058,Team Atlas,L. Nguyen,P2,21,2025-11-06,2025-12-28,2026-01-01,56,Done,10,2
+EPIC-00473,Migrate Notification auth flow,CAP-0058,Team Cygnus,M. Patel,P1,8,2025-10-29,2025-12-13,2025-12-14,46,Done,13,3
+EPIC-00474,Implement Notification service,CAP-0058,Team Vega,D. Singh,P3,3,2025-09-24,2025-11-06,,53,In Progress,13,0
+EPIC-00475,Decommission Settlement event consumer,CAP-0059,Team Cygnus,J. Chen,P2,8,2025-11-23,2025-12-20,,25,In Review,5,1
+EPIC-00476,Automate Settlement service,CAP-0059,Team Cygnus,S. Rai,P1,5,2025-10-21,2025-12-17,,56,Blocked,10,3
+EPIC-00477,Automate Settlement dashboard,CAP-0059,Team Cygnus,M. Patel,P3,5,2025-12-12,2026-02-07,,58,Not Started,11,3
+EPIC-00478,Automate Settlement auth flow,CAP-0059,Team Nova,R. Kumar,P2,21,2025-12-10,2026-01-14,,35,Not Started,14,3
+EPIC-00479,Migrate Settlement auth flow,CAP-0059,Team Phoenix,R. Kumar,P0,8,2025-11-26,2025-12-31,,37,Not Started,3,4
+EPIC-00480,Integrate Settlement auth flow,CAP-0059,Team Draco,J. Chen,P2,8,2025-12-06,2025-12-30,,24,In Progress,10,3
+EPIC-00481,Refactor Settlement ingestion job,CAP-0059,Team Phoenix,R. Kumar,P1,21,2025-10-19,2025-12-03,2025-12-06,48,Done,14,4
+EPIC-00482,Migrate Settlement service,CAP-0059,Team Lyra,S. Rai,P3,21,2025-11-06,2025-11-22,2025-11-23,17,Done,9,0
+EPIC-00483,Migrate Settlement dashboard,CAP-0059,Team Orion,L. Nguyen,P1,3,2025-12-12,2026-01-25,,46,In Review,13,4
+EPIC-00484,Migrate Billing batch job,CAP-0060,Team Orion,R. Kumar,P0,21,2025-10-17,2025-11-29,,43,Not Started,1,4
+EPIC-00485,Refactor Billing ingestion job,CAP-0060,Team Atlas,R. Kumar,P1,8,2025-12-10,2025-12-26,,15,Not Started,10,2
+EPIC-00486,Migrate Billing dashboard,CAP-0060,Team Vega,M. Patel,P1,8,2025-11-01,2025-12-19,,47,Not Started,5,3
+EPIC-00487,Implement Billing auth flow,CAP-0060,Team Atlas,L. Nguyen,P2,5,2025-11-19,2026-01-04,,44,In Review,9,4
+EPIC-00488,Decommission Billing endpoint,CAP-0060,Team Lyra,S. Rai,P1,3,2025-10-25,2025-11-12,,17,Blocked,8,2
+EPIC-00489,Integrate Billing service,CAP-0060,Team Nova,P. Wong,P2,8,2025-10-21,2025-11-28,2025-11-26,36,Done,3,3
+EPIC-00490,Automate Billing endpoint,CAP-0060,Team Cygnus,M. Patel,P0,13,2025-11-29,2026-01-24,2026-01-27,59,Done,10,0
+EPIC-00491,Build Billing dashboard,CAP-0060,Team Atlas,A. Johnson,P1,21,2025-11-27,2026-01-21,2026-01-24,58,Done,4,3
+EPIC-00492,Refactor Billing ingestion job,CAP-0060,Team Lyra,P. Wong,P0,3,2025-10-26,2025-12-23,,63,In Review,8,2
+EPIC-00493,Implement Billing dashboard,CAP-0060,Team Nova,M. Patel,P0,13,2025-11-14,2025-12-27,,46,In Review,10,2
+EPIC-00494,Refactor Billing auth flow,CAP-0060,Team Atlas,D. Singh,P1,21,2025-11-25,2025-12-13,2025-12-14,19,Done,7,4
+EPIC-00495,Decommission Billing endpoint,CAP-0060,Team Vega,D. Singh,P2,21,2025-11-14,2025-12-22,,36,Blocked,7,1
+EPIC-00496,Integrate Provisioning batch job,CAP-0061,Team Orion,P. Wong,P2,21,2025-04-04,2025-06-02,,61,Not Started,10,3
+EPIC-00497,Automate Provisioning ingestion job,CAP-0061,Team Atlas,D. Singh,P2,13,2025-04-11,2025-05-14,,36,Blocked,2,0
+EPIC-00498,Implement Provisioning endpoint,CAP-0061,Team Phoenix,M. Patel,P3,21,2025-05-22,2025-06-13,,23,In Progress,11,0
+EPIC-00499,Build Provisioning auth flow,CAP-0061,Team Lyra,R. Kumar,P3,8,2025-05-06,2025-06-17,,41,In Review,10,2
+EPIC-00500,Decommission Provisioning service,CAP-0061,Team Atlas,L. Nguyen,P0,3,2025-05-09,2025-06-24,,46,In Review,1,1
+EPIC-00501,Implement Provisioning event consumer,CAP-0061,Team Cygnus,L. Nguyen,P3,13,2025-04-18,2025-05-03,2025-05-02,14,Done,11,4
+EPIC-00502,Build Provisioning auth flow,CAP-0061,Team Draco,D. Singh,P2,13,2025-04-13,2025-06-08,,54,In Progress,9,1
+EPIC-00503,Automate Diagnostics batch job,CAP-0062,Team Lyra,P. Wong,P3,5,2025-06-05,2025-06-27,,20,In Progress,12,0
+EPIC-00504,Migrate Diagnostics batch job,CAP-0062,Team Atlas,M. Patel,P3,21,2025-07-18,2025-08-27,,50,Blocked,7,3
+EPIC-00505,Decommission Diagnostics event consumer,CAP-0062,Team Draco,S. Rai,P3,5,2025-06-25,2025-08-02,2025-08-02,38,Done,10,1
+EPIC-00506,Build Diagnostics auth flow,CAP-0062,Team Lyra,P. Wong,P2,3,2025-07-03,2025-08-09,,46,Not Started,10,0
+EPIC-00507,Integrate Diagnostics service,CAP-0062,Team Nova,J. Chen,P0,5,2025-06-06,2025-08-05,2025-08-08,63,Done,9,2
+EPIC-00508,Integrate Diagnostics batch job,CAP-0062,Team Nova,R. Kumar,P0,8,2025-07-09,2025-09-03,,70,Blocked,13,0
+EPIC-00509,Build Identity ingestion job,CAP-0063,Team Phoenix,R. Kumar,P2,5,2025-05-25,2025-07-08,2025-07-09,45,Done,6,4
+EPIC-00510,Integrate Identity auth flow,CAP-0063,Team Phoenix,P. Wong,P1,21,2025-06-09,2025-07-12,,34,In Review,1,8
+EPIC-00511,Integrate Identity dashboard,CAP-0063,Team Phoenix,J. Chen,P2,8,2025-06-13,2025-08-05,,50,Not Started,3,6
+EPIC-00512,Decommission Identity dashboard,CAP-0063,Team Orion,M. Patel,P3,8,2025-05-10,2025-06-09,,28,Blocked,3,0
+EPIC-00513,Refactor Identity event consumer,CAP-0063,Team Orion,J. Chen,P1,21,2025-06-06,2025-07-05,,29,Not Started,6,4
+EPIC-00514,Automate Identity ingestion job,CAP-0063,Team Orion,M. Patel,P1,21,2025-06-10,2025-07-20,2025-07-22,42,Done,12,1
+EPIC-00515,Implement Identity batch job,CAP-0063,Team Cygnus,R. Kumar,P3,21,2025-05-09,2025-05-30,2025-05-29,20,Done,8,3
+EPIC-00516,Build Identity batch job,CAP-0063,Team Vega,D. Singh,P0,8,2025-06-07,2025-07-15,,38,Blocked,14,1
+EPIC-00517,Build Identity batch job,CAP-0063,Team Nova,L. Nguyen,P3,21,2025-05-13,2025-06-29,,49,Not Started,9,0
+EPIC-00518,Refactor Identity dashboard,CAP-0063,Team Lyra,A. Johnson,P1,21,2025-05-10,2025-05-30,2025-05-29,19,Done,8,4
+EPIC-00519,Integrate Identity batch job,CAP-0063,Team Cygnus,D. Singh,P0,21,2025-05-04,2025-06-07,,35,Not Started,1,0
+EPIC-00520,Integrate Identity ingestion job,CAP-0063,Team Atlas,S. Rai,P0,3,2025-05-15,2025-06-12,,29,In Progress,1,2
+EPIC-00521,Integrate API service,CAP-0064,Team Atlas,M. Patel,P2,8,2025-06-23,2025-08-14,,50,In Progress,2,4
+EPIC-00522,Integrate API service,CAP-0064,Team Nova,L. Nguyen,P2,5,2025-07-28,2025-09-09,2025-09-19,53,Done,12,2
+EPIC-00523,Refactor API event consumer,CAP-0064,Team Atlas,R. Kumar,P1,13,2025-06-21,2025-07-29,,38,In Review,14,0
+EPIC-00524,Build API endpoint,CAP-0064,Team Atlas,M. Patel,P3,5,2025-07-27,2025-09-04,2025-09-13,48,Done,2,1
+EPIC-00525,Build API batch job,CAP-0064,Team Atlas,R. Kumar,P3,3,2025-07-04,2025-07-24,,25,Not Started,2,0
+EPIC-00526,Migrate API batch job,CAP-0064,Team Nova,M. Patel,P2,13,2025-07-28,2025-08-11,2025-08-14,17,Done,5,0
+EPIC-00527,Decommission API batch job,CAP-0064,Team Phoenix,J. Chen,P1,3,2025-08-17,2025-10-01,2025-10-12,56,Done,7,6
+EPIC-00528,Implement Identity auth flow,CAP-0065,Team Nova,S. Rai,P0,8,2025-07-09,2025-08-14,,45,In Review,7,2
+EPIC-00529,Implement Identity event consumer,CAP-0065,Team Cygnus,S. Rai,P3,5,2025-07-04,2025-08-05,,40,In Progress,9,1
+EPIC-00530,Integrate Identity ingestion job,CAP-0065,Team Lyra,P. Wong,P1,5,2025-08-01,2025-08-21,2025-08-26,25,Done,2,2
+EPIC-00531,Migrate Identity service,CAP-0065,Team Phoenix,J. Chen,P2,13,2025-07-21,2025-09-10,2025-09-22,63,Done,7,2
+EPIC-00532,Implement Identity service,CAP-0065,Team Nova,A. Johnson,P3,21,2025-06-26,2025-07-13,2025-07-13,17,Done,2,0
+EPIC-00533,Integrate Identity auth flow,CAP-0065,Team Orion,S. Rai,P3,21,2025-06-19,2025-07-07,2025-07-06,17,Done,11,1
+EPIC-00534,Migrate Identity batch job,CAP-0065,Team Phoenix,S. Rai,P2,3,2025-07-16,2025-08-07,,27,In Progress,11,0
+EPIC-00535,Decommission Identity endpoint,CAP-0065,Team Nova,P. Wong,P1,3,2025-07-28,2025-09-17,,63,Not Started,2,0
+EPIC-00536,Build Identity dashboard,CAP-0065,Team Vega,M. Patel,P2,5,2025-07-26,2025-09-21,,71,In Review,2,3
+EPIC-00537,Decommission Identity endpoint,CAP-0065,Team Phoenix,L. Nguyen,P1,13,2025-06-26,2025-07-14,2025-07-13,17,Done,3,2
+EPIC-00538,Migrate Diagnostics service,CAP-0066,Team Phoenix,J. Chen,P0,3,2025-06-14,2025-08-07,,56,Not Started,8,2
+EPIC-00539,Implement Diagnostics batch job,CAP-0066,Team Orion,M. Patel,P1,5,2025-06-05,2025-07-26,2025-07-30,55,Done,12,3
+EPIC-00540,Decommission Diagnostics ingestion job,CAP-0066,Team Lyra,M. Patel,P3,21,2025-05-21,2025-06-19,,31,Not Started,10,4
+EPIC-00541,Integrate Diagnostics event consumer,CAP-0066,Team Atlas,A. Johnson,P0,21,2025-06-14,2025-07-17,,33,Blocked,4,0
+EPIC-00542,Decommission Diagnostics dashboard,CAP-0066,Team Atlas,S. Rai,P1,3,2025-06-19,2025-08-06,,49,In Progress,5,3
+EPIC-00543,Integrate Diagnostics event consumer,CAP-0066,Team Orion,L. Nguyen,P2,5,2025-06-22,2025-08-05,,45,Not Started,1,1
+EPIC-00544,Refactor Diagnostics dashboard,CAP-0066,Team Draco,M. Patel,P0,13,2025-06-03,2025-07-16,,41,Blocked,3,0
+EPIC-00545,Implement Activation endpoint,CAP-0067,Team Atlas,D. Singh,P1,8,2025-09-14,2025-10-26,,52,Blocked,6,4
+EPIC-00546,Automate Activation service,CAP-0067,Team Vega,D. Singh,P1,13,2025-08-19,2025-09-16,,35,In Progress,12,0
+EPIC-00547,Implement Activation ingestion job,CAP-0067,Team Vega,A. Johnson,P3,5,2025-09-05,2025-10-20,2025-10-31,56,Done,3,0
+EPIC-00548,Refactor Activation endpoint,CAP-0067,Team Draco,A. Johnson,P2,5,2025-08-28,2025-10-27,,75,In Review,5,1
+EPIC-00549,Integrate Activation auth flow,CAP-0067,Team Phoenix,P. Wong,P3,13,2025-08-02,2025-09-02,,38,Not Started,14,2
+EPIC-00550,Automate Activation dashboard,CAP-0067,Team Orion,M. Patel,P1,3,2025-08-13,2025-09-14,,40,In Progress,13,4
+EPIC-00551,Automate Activation auth flow,CAP-0067,Team Draco,P. Wong,P2,3,2025-08-30,2025-09-26,2025-10-02,33,Done,14,4
+EPIC-00552,Integrate Activation event consumer,CAP-0067,Team Draco,A. Johnson,P1,21,2025-08-14,2025-09-12,2025-09-19,36,Done,10,2
+EPIC-00553,Build Activation service,CAP-0067,Team Phoenix,D. Singh,P3,3,2025-08-01,2025-09-14,,55,Not Started,7,8
+EPIC-00554,Build Activation endpoint,CAP-0067,Team Nova,M. Patel,P2,8,2025-08-04,2025-09-22,2025-10-04,61,Done,4,0
+EPIC-00555,Integrate Activation service,CAP-0067,Team Vega,P. Wong,P0,13,2025-07-31,2025-09-13,,55,In Progress,12,2
+EPIC-00556,Automate Activation endpoint,CAP-0067,Team Nova,L. Nguyen,P3,3,2025-09-23,2025-11-21,,73,In Progress,13,3
+EPIC-00557,Integrate Activation dashboard,CAP-0068,Team Draco,A. Johnson,P0,21,2025-05-31,2025-06-16,,15,Blocked,9,2
+EPIC-00558,Integrate Activation service,CAP-0068,Team Cygnus,L. Nguyen,P3,21,2025-05-30,2025-07-26,,57,Not Started,7,0
+EPIC-00559,Refactor Activation dashboard,CAP-0068,Team Phoenix,A. Johnson,P1,8,2025-05-09,2025-07-03,,56,Blocked,12,0
+EPIC-00560,Decommission Activation service,CAP-0068,Team Vega,A. Johnson,P2,8,2025-06-08,2025-07-22,,46,In Progress,13,4
+EPIC-00561,Decommission Activation batch job,CAP-0068,Team Lyra,P. Wong,P0,13,2025-05-25,2025-06-25,,29,In Review,8,2
+EPIC-00562,Build Identity auth flow,CAP-0069,Team Lyra,J. Chen,P0,13,2025-08-03,2025-09-29,,71,In Progress,8,0
+EPIC-00563,Refactor Identity service,CAP-0069,Team Orion,M. Patel,P3,5,2025-07-17,2025-08-10,,30,Not Started,12,2
+EPIC-00564,Decommission Identity batch job,CAP-0069,Team Vega,P. Wong,P2,13,2025-07-12,2025-08-13,,40,Blocked,3,3
+EPIC-00565,Integrate Identity batch job,CAP-0069,Team Nova,A. Johnson,P2,13,2025-07-12,2025-08-13,,40,Not Started,1,1
+EPIC-00566,Integrate Identity batch job,CAP-0069,Team Cygnus,P. Wong,P3,8,2025-08-30,2025-10-03,,42,Blocked,11,3
+EPIC-00567,Automate Identity dashboard,CAP-0069,Team Orion,R. Kumar,P0,5,2025-07-21,2025-08-20,2025-08-27,37,Done,6,1
+EPIC-00568,Refactor Identity ingestion job,CAP-0069,Team Cygnus,M. Patel,P1,5,2025-07-21,2025-09-12,,66,Blocked,5,1
+EPIC-00569,Migrate Identity service,CAP-0069,Team Orion,R. Kumar,P2,5,2025-07-13,2025-08-16,,42,In Progress,8,4
+EPIC-00570,Decommission Identity batch job,CAP-0069,Team Vega,L. Nguyen,P3,21,2025-07-13,2025-09-07,,70,In Review,3,2
+EPIC-00571,Decommission Identity dashboard,CAP-0069,Team Orion,M. Patel,P3,8,2025-07-18,2025-08-02,2025-08-05,18,Done,13,3
+EPIC-00572,Implement Identity batch job,CAP-0069,Team Orion,R. Kumar,P1,21,2025-08-14,2025-09-29,,57,In Review,8,2
+EPIC-00573,Refactor Identity batch job,CAP-0069,Team Nova,J. Chen,P2,3,2025-07-18,2025-09-16,,75,Not Started,3,3
+EPIC-00574,Build Partner dashboard,CAP-0070,Team Vega,A. Johnson,P1,8,2025-07-14,2025-08-17,,42,Blocked,11,0
+EPIC-00575,Implement Partner service,CAP-0070,Team Vega,A. Johnson,P3,8,2025-08-12,2025-09-23,,52,Blocked,7,0
+EPIC-00576,Integrate Partner dashboard,CAP-0070,Team Phoenix,L. Nguyen,P0,8,2025-08-03,2025-08-26,,28,In Review,7,6
+EPIC-00577,Refactor Partner dashboard,CAP-0070,Team Cygnus,P. Wong,P3,13,2025-08-06,2025-09-24,,61,In Progress,12,0
+EPIC-00578,Migrate Partner event consumer,CAP-0070,Team Lyra,J. Chen,P1,5,2025-08-24,2025-10-04,,51,In Progress,14,3
+EPIC-00579,Build Partner event consumer,CAP-0070,Team Lyra,D. Singh,P0,3,2025-08-11,2025-09-15,,43,Blocked,13,0
+EPIC-00580,Integrate Partner dashboard,CAP-0070,Team Draco,M. Patel,P1,5,2025-08-04,2025-08-29,2025-09-04,31,Done,12,4
+EPIC-00581,Refactor Partner auth flow,CAP-0070,Team Draco,P. Wong,P3,5,2025-08-09,2025-08-25,,20,Blocked,5,2
+EPIC-00582,Automate Partner service,CAP-0070,Team Phoenix,R. Kumar,P3,5,2025-07-18,2025-08-17,2025-08-24,37,Done,2,4
+EPIC-00583,Integrate Partner batch job,CAP-0070,Team Nova,J. Chen,P2,21,2025-07-24,2025-08-08,,18,In Review,8,0
+EPIC-00584,Automate Notification dashboard,CAP-0071,Team Draco,S. Rai,P2,5,2025-08-19,2025-10-15,,71,Not Started,6,3
+EPIC-00585,Migrate Notification dashboard,CAP-0071,Team Phoenix,S. Rai,P2,8,2025-08-08,2025-10-05,,72,In Review,3,2
+EPIC-00586,Integrate Notification dashboard,CAP-0071,Team Draco,J. Chen,P1,5,2025-07-13,2025-08-14,,40,Blocked,11,2
+EPIC-00587,Decommission Notification event consumer,CAP-0071,Team Atlas,R. Kumar,P2,8,2025-07-20,2025-09-06,,60,In Review,14,2
+EPIC-00588,Decommission Notification auth flow,CAP-0071,Team Atlas,R. Kumar,P2,13,2025-08-01,2025-08-24,,28,In Progress,9,0
+EPIC-00589,Refactor Notification endpoint,CAP-0071,Team Draco,A. Johnson,P0,13,2025-07-16,2025-08-12,,33,Blocked,4,1
+EPIC-00590,Implement Notification service,CAP-0071,Team Nova,R. Kumar,P2,5,2025-08-31,2025-09-22,2025-09-27,27,Done,6,0
+EPIC-00591,Decommission Notification auth flow,CAP-0071,Team Nova,J. Chen,P1,5,2025-08-27,2025-10-01,,43,In Review,1,1
+EPIC-00592,Integrate Notification endpoint,CAP-0071,Team Orion,D. Singh,P0,3,2025-07-29,2025-08-20,,27,In Progress,2,1
+EPIC-00593,Automate Notification ingestion job,CAP-0071,Team Phoenix,S. Rai,P0,13,2025-08-27,2025-10-07,,51,In Progress,2,0
+EPIC-00594,Refactor Notification service,CAP-0071,Team Atlas,J. Chen,P1,21,2025-07-14,2025-08-16,,41,Not Started,13,0
+EPIC-00595,Integrate Activation dashboard,CAP-0072,Team Orion,L. Nguyen,P1,21,2025-04-22,2025-05-11,,18,Blocked,6,2
+EPIC-00596,Decommission Activation auth flow,CAP-0072,Team Vega,A. Johnson,P2,5,2025-04-25,2025-05-15,,21,Blocked,4,0
+EPIC-00597,Integrate Activation service,CAP-0072,Team Phoenix,M. Patel,P3,3,2025-06-19,2025-07-16,,29,In Review,12,6
+EPIC-00598,Automate Activation dashboard,CAP-0072,Team Orion,L. Nguyen,P0,13,2025-05-15,2025-06-25,2025-06-24,40,Done,2,1
+EPIC-00599,Decommission Activation endpoint,CAP-0072,Team Atlas,L. Nguyen,P3,3,2025-05-22,2025-06-28,,39,Not Started,2,4
+EPIC-00600,Refactor Activation ingestion job,CAP-0072,Team Draco,D. Singh,P2,13,2025-05-29,2025-07-01,,34,In Progress,9,3
+EPIC-00601,Automate Activation service,CAP-0072,Team Vega,P. Wong,P0,13,2025-06-17,2025-07-31,,47,In Progress,1,2
+EPIC-00602,Implement Activation endpoint,CAP-0073,Team Atlas,M. Patel,P0,8,2025-09-18,2025-10-27,,48,Not Started,12,4
+EPIC-00603,Refactor Activation endpoint,CAP-0073,Team Vega,R. Kumar,P3,8,2025-10-01,2025-11-09,2025-11-07,37,Done,5,3
+EPIC-00604,Integrate Activation auth flow,CAP-0073,Team Nova,P. Wong,P0,3,2025-10-23,2025-12-01,,42,In Review,3,4
+EPIC-00605,Build Activation ingestion job,CAP-0073,Team Lyra,S. Rai,P0,13,2025-09-07,2025-10-31,,67,Not Started,2,1
+EPIC-00606,Migrate Activation ingestion job,CAP-0073,Team Phoenix,J. Chen,P0,21,2025-10-01,2025-11-27,,56,Blocked,10,4
+EPIC-00607,Automate Activation ingestion job,CAP-0073,Team Nova,R. Kumar,P2,21,2025-09-05,2025-10-07,2025-10-15,40,Done,9,3
+EPIC-00608,Automate Activation service,CAP-0073,Team Phoenix,D. Singh,P3,13,2025-09-20,2025-10-11,2025-10-16,26,Done,6,6
+EPIC-00609,Implement Activation endpoint,CAP-0073,Team Phoenix,D. Singh,P1,8,2025-09-28,2025-11-23,,70,In Progress,8,4
+EPIC-00610,Build Activation event consumer,CAP-0073,Team Draco,P. Wong,P3,21,2025-08-31,2025-10-20,,62,Blocked,11,3
+EPIC-00611,Decommission Activation service,CAP-0073,Team Orion,L. Nguyen,P2,8,2025-09-18,2025-10-18,,37,Blocked,7,3
+EPIC-00612,Implement Activation auth flow,CAP-0073,Team Phoenix,S. Rai,P2,13,2025-08-26,2025-09-17,,27,In Review,13,4
+EPIC-00613,Refactor Order dashboard,CAP-0074,Team Draco,A. Johnson,P2,21,2025-08-24,2025-09-29,,45,In Progress,4,0
+EPIC-00614,Integrate Order service,CAP-0074,Team Atlas,S. Rai,P2,3,2025-09-22,2025-10-25,,41,In Review,3,0
+EPIC-00615,Integrate Order event consumer,CAP-0074,Team Nova,S. Rai,P3,21,2025-08-25,2025-10-14,2025-10-26,62,Done,5,4
+EPIC-00616,Refactor Order ingestion job,CAP-0074,Team Phoenix,P. Wong,P0,5,2025-09-03,2025-10-11,,47,Blocked,2,4
+EPIC-00617,Build Order auth flow,CAP-0074,Team Cygnus,R. Kumar,P2,13,2025-09-18,2025-11-13,,70,In Progress,10,2
+EPIC-00618,Integrate Provisioning event consumer,CAP-0075,Team Nova,R. Kumar,P0,8,2025-07-19,2025-08-06,,22,In Progress,5,4
+EPIC-00619,Automate Provisioning endpoint,CAP-0075,Team Draco,L. Nguyen,P2,3,2025-07-08,2025-07-27,,23,Not Started,10,4
+EPIC-00620,Build Provisioning endpoint,CAP-0075,Team Nova,R. Kumar,P3,21,2025-06-21,2025-07-09,,18,Blocked,13,2
+EPIC-00621,Migrate Provisioning ingestion job,CAP-0075,Team Cygnus,S. Rai,P1,21,2025-06-24,2025-07-24,,31,Blocked,3,3
+EPIC-00622,Migrate Provisioning batch job,CAP-0075,Team Nova,D. Singh,P0,21,2025-07-21,2025-09-02,,53,Blocked,13,2
+EPIC-00623,Refactor Provisioning ingestion job,CAP-0075,Team Vega,L. Nguyen,P0,5,2025-06-08,2025-07-07,2025-07-06,28,Done,7,2
+EPIC-00624,Refactor Provisioning event consumer,CAP-0075,Team Draco,A. Johnson,P0,5,2025-06-17,2025-08-11,,53,In Progress,7,4
+EPIC-00625,Migrate Telemetry event consumer,CAP-0076,Team Phoenix,D. Singh,P3,3,2025-09-30,2025-11-02,2025-11-10,41,Done,9,6
+EPIC-00626,Migrate Telemetry dashboard,CAP-0076,Team Vega,M. Patel,P0,13,2025-08-17,2025-09-01,,18,In Review,11,2
+EPIC-00627,Implement Telemetry event consumer,CAP-0076,Team Phoenix,L. Nguyen,P0,13,2025-10-05,2025-10-24,,18,Not Started,7,4
+EPIC-00628,Migrate Telemetry service,CAP-0076,Team Orion,R. Kumar,P3,3,2025-09-14,2025-10-30,,57,Blocked,11,0
+EPIC-00629,Decommission Telemetry service,CAP-0076,Team Vega,D. Singh,P1,13,2025-09-27,2025-10-31,,42,Blocked,12,2
+EPIC-00630,Migrate Telemetry service,CAP-0076,Team Vega,R. Kumar,P0,13,2025-08-20,2025-09-16,2025-09-22,33,Done,7,2
+EPIC-00631,Integrate Telemetry service,CAP-0076,Team Cygnus,A. Johnson,P2,5,2025-08-29,2025-10-16,2025-10-28,60,Done,11,3
+EPIC-00632,Integrate Settlement dashboard,CAP-0077,Team Nova,S. Rai,P1,8,2025-07-21,2025-08-23,,41,Blocked,1,0
+EPIC-00633,Refactor Settlement batch job,CAP-0077,Team Draco,A. Johnson,P3,13,2025-07-13,2025-08-19,,46,Blocked,14,0
+EPIC-00634,Build Settlement dashboard,CAP-0077,Team Phoenix,M. Patel,P3,8,2025-06-18,2025-07-07,,20,In Review,4,2
+EPIC-00635,Automate Settlement service,CAP-0077,Team Draco,D. Singh,P2,13,2025-06-16,2025-07-05,2025-07-06,20,Done,12,3
+EPIC-00636,Automate Settlement endpoint,CAP-0077,Team Atlas,D. Singh,P2,13,2025-07-13,2025-08-12,,37,Not Started,6,4
+EPIC-00637,Automate Settlement service,CAP-0077,Team Phoenix,M. Patel,P0,13,2025-07-10,2025-09-03,2025-09-16,68,Done,13,2
+EPIC-00638,Integrate Settlement dashboard,CAP-0077,Team Vega,M. Patel,P3,8,2025-06-19,2025-08-08,,48,In Progress,9,1
+EPIC-00639,Build Settlement event consumer,CAP-0077,Team Nova,L. Nguyen,P2,5,2025-07-16,2025-08-07,,27,In Progress,11,2
+EPIC-00640,Build Settlement dashboard,CAP-0077,Team Atlas,S. Rai,P1,3,2025-06-10,2025-07-19,,42,In Progress,1,4
+EPIC-00641,Refactor API batch job,CAP-0078,Team Vega,R. Kumar,P1,3,2025-11-04,2025-11-28,2025-11-26,22,Done,10,4
+EPIC-00642,Migrate API auth flow,CAP-0078,Team Cygnus,P. Wong,P3,3,2025-09-18,2025-10-02,2025-10-05,17,Done,13,4
+EPIC-00643,Integrate API endpoint,CAP-0078,Team Vega,M. Patel,P3,5,2025-09-23,2025-10-24,2025-10-31,38,Done,7,2
+EPIC-00644,Automate API dashboard,CAP-0078,Team Vega,M. Patel,P0,8,2025-10-27,2025-12-23,2025-12-21,55,Done,13,1
+EPIC-00645,Migrate API auth flow,CAP-0078,Team Lyra,P. Wong,P1,8,2025-10-09,2025-11-07,,29,Not Started,1,3
+EPIC-00646,Integrate API endpoint,CAP-0078,Team Draco,J. Chen,P0,3,2025-10-26,2025-12-03,,40,In Review,2,4
+EPIC-00647,Migrate API ingestion job,CAP-0078,Team Cygnus,R. Kumar,P3,8,2025-11-08,2025-12-14,,39,Not Started,1,4
+EPIC-00648,Integrate API dashboard,CAP-0078,Team Draco,R. Kumar,P1,21,2025-09-19,2025-11-07,,61,Blocked,3,0
+EPIC-00649,Refactor API ingestion job,CAP-0078,Team Nova,M. Patel,P2,3,2025-09-19,2025-10-08,,23,Blocked,7,2
+EPIC-00650,Implement API endpoint,CAP-0078,Team Cygnus,R. Kumar,P2,13,2025-10-12,2025-11-12,,32,In Review,5,3
+EPIC-00651,Refactor API batch job,CAP-0078,Team Orion,M. Patel,P0,5,2025-10-12,2025-11-04,,23,Not Started,4,3
+EPIC-00652,Build Settlement dashboard,CAP-0079,Team Phoenix,P. Wong,P0,13,2025-08-15,2025-10-13,2025-10-27,73,Done,2,6
+EPIC-00653,Integrate Settlement auth flow,CAP-0079,Team Cygnus,M. Patel,P0,8,2025-09-05,2025-10-18,,53,Not Started,14,3
+EPIC-00654,Migrate Settlement event consumer,CAP-0079,Team Atlas,R. Kumar,P1,21,2025-08-23,2025-09-17,,31,Blocked,14,1
+EPIC-00655,Decommission Settlement event consumer,CAP-0079,Team Phoenix,P. Wong,P0,8,2025-09-10,2025-10-05,,31,Not Started,4,6
+EPIC-00656,Refactor Settlement batch job,CAP-0079,Team Phoenix,J. Chen,P2,5,2025-09-17,2025-10-08,,26,In Review,10,6
+EPIC-00657,Implement Settlement ingestion job,CAP-0079,Team Phoenix,R. Kumar,P0,8,2025-09-27,2025-11-25,2025-12-09,73,Done,11,6
+EPIC-00658,Refactor Diagnostics batch job,CAP-0080,Team Nova,S. Rai,P0,21,2025-10-21,2025-12-10,,48,In Review,6,0
+EPIC-00659,Implement Diagnostics ingestion job,CAP-0080,Team Draco,S. Rai,P1,5,2025-09-21,2025-10-16,2025-10-22,31,Done,2,1
+EPIC-00660,Automate Diagnostics ingestion job,CAP-0080,Team Draco,P. Wong,P3,8,2025-09-23,2025-11-17,,68,Not Started,5,1
+EPIC-00661,Refactor Diagnostics batch job,CAP-0080,Team Orion,P. Wong,P3,13,2025-09-11,2025-10-18,,46,In Progress,8,4
+EPIC-00662,Implement Settlement event consumer,CAP-0081,Team Draco,D. Singh,P0,3,2025-08-14,2025-09-20,,46,In Progress,7,4
+EPIC-00663,Build Settlement batch job,CAP-0081,Team Cygnus,J. Chen,P2,13,2025-08-01,2025-09-25,2025-10-08,68,Done,9,1
+EPIC-00664,Implement Settlement event consumer,CAP-0081,Team Draco,R. Kumar,P1,21,2025-08-17,2025-09-19,,41,In Progress,11,1
+EPIC-00665,Refactor Settlement auth flow,CAP-0081,Team Draco,J. Chen,P3,13,2025-07-21,2025-09-08,,61,Not Started,9,0
+EPIC-00666,Build Settlement batch job,CAP-0081,Team Atlas,J. Chen,P0,3,2025-09-02,2025-10-22,,62,In Review,5,2
+EPIC-00667,Migrate Settlement event consumer,CAP-0081,Team Nova,R. Kumar,P2,21,2025-07-29,2025-09-06,,48,Not Started,7,0
+EPIC-00668,Automate Settlement batch job,CAP-0081,Team Nova,M. Patel,P1,5,2025-08-15,2025-10-07,,66,In Review,14,2
+EPIC-00669,Integrate Settlement auth flow,CAP-0081,Team Atlas,S. Rai,P0,13,2025-08-03,2025-09-29,2025-10-13,71,Done,9,0
+EPIC-00670,Migrate API batch job,CAP-0082,Team Phoenix,P. Wong,P2,21,2025-07-23,2025-09-04,,53,Blocked,12,6
+EPIC-00671,Integrate API batch job,CAP-0082,Team Cygnus,M. Patel,P1,3,2025-08-06,2025-10-02,,71,In Review,2,3
+EPIC-00672,Implement API event consumer,CAP-0082,Team Vega,M. Patel,P1,13,2025-06-24,2025-08-21,,63,In Progress,8,0
+EPIC-00673,Implement API dashboard,CAP-0082,Team Vega,S. Rai,P0,5,2025-08-11,2025-09-23,2025-10-03,53,Done,7,1
+EPIC-00674,Integrate API batch job,CAP-0082,Team Orion,P. Wong,P1,5,2025-07-21,2025-09-04,,56,Not Started,14,3
+EPIC-00675,Implement API dashboard,CAP-0083,Team Draco,P. Wong,P2,3,2025-06-14,2025-07-04,2025-07-04,20,Done,14,3
+EPIC-00676,Build API ingestion job,CAP-0083,Team Nova,S. Rai,P0,13,2025-07-16,2025-09-05,2025-09-17,63,Done,4,4
+EPIC-00677,Decommission API service,CAP-0083,Team Cygnus,P. Wong,P2,13,2025-07-01,2025-08-25,2025-09-07,68,Done,2,3
+EPIC-00678,Implement API endpoint,CAP-0083,Team Draco,P. Wong,P1,21,2025-07-02,2025-08-31,2025-09-15,75,Done,6,1
+EPIC-00679,Decommission API batch job,CAP-0083,Team Vega,D. Singh,P3,8,2025-07-05,2025-08-26,,65,In Progress,5,3
+EPIC-00680,Automate API event consumer,CAP-0083,Team Nova,M. Patel,P1,5,2025-06-24,2025-08-16,2025-08-14,51,Done,3,0
+EPIC-00681,Implement API event consumer,CAP-0083,Team Nova,S. Rai,P0,8,2025-07-10,2025-08-24,,56,In Progress,4,2
+EPIC-00682,Refactor API batch job,CAP-0083,Team Lyra,J. Chen,P2,13,2025-06-24,2025-07-19,,26,Not Started,13,4
+EPIC-00683,Implement Notification auth flow,CAP-0084,Team Vega,S. Rai,P2,5,2025-05-08,2025-06-22,,44,In Review,13,2
+EPIC-00684,Integrate Notification service,CAP-0084,Team Atlas,J. Chen,P0,21,2025-06-22,2025-08-03,,44,Not Started,13,0
+EPIC-00685,Migrate Notification batch job,CAP-0084,Team Atlas,P. Wong,P3,3,2025-05-01,2025-05-28,,29,In Review,12,1
+EPIC-00686,Integrate Notification dashboard,CAP-0084,Team Orion,S. Rai,P1,13,2025-05-15,2025-06-06,2025-06-05,21,Done,7,1
+EPIC-00687,Refactor Notification auth flow,CAP-0084,Team Cygnus,A. Johnson,P1,21,2025-05-04,2025-05-23,,18,In Review,11,3
+EPIC-00688,Migrate Identity event consumer,CAP-0085,Team Vega,L. Nguyen,P0,13,2025-07-19,2025-08-28,2025-09-07,50,Done,14,3
+EPIC-00689,Automate Identity service,CAP-0085,Team Orion,L. Nguyen,P3,5,2025-08-06,2025-09-22,,58,Not Started,6,0
+EPIC-00690,Implement Identity ingestion job,CAP-0085,Team Draco,R. Kumar,P3,13,2025-08-09,2025-08-25,,20,Blocked,1,1
+EPIC-00691,Integrate Identity batch job,CAP-0085,Team Lyra,M. Patel,P3,13,2025-07-12,2025-08-17,,45,In Review,9,0
+EPIC-00692,Decommission Identity auth flow,CAP-0085,Team Vega,D. Singh,P1,8,2025-08-11,2025-10-03,,66,In Review,13,3
+EPIC-00693,Implement Identity auth flow,CAP-0085,Team Atlas,R. Kumar,P1,3,2025-07-13,2025-08-20,,47,Blocked,9,1
+EPIC-00694,Decommission Identity dashboard,CAP-0085,Team Lyra,R. Kumar,P1,8,2025-08-09,2025-10-02,,67,Not Started,1,1
+EPIC-00695,Decommission Identity service,CAP-0085,Team Draco,L. Nguyen,P0,3,2025-08-07,2025-08-24,,21,In Review,11,2
+EPIC-00696,Build Identity dashboard,CAP-0085,Team Atlas,A. Johnson,P2,8,2025-07-28,2025-08-11,,17,In Review,4,3
+EPIC-00697,Integrate Identity event consumer,CAP-0085,Team Lyra,D. Singh,P1,3,2025-08-13,2025-10-11,,73,In Progress,12,4
+EPIC-00698,Automate Billing event consumer,CAP-0086,Team Vega,J. Chen,P0,13,2025-06-07,2025-07-20,2025-07-18,41,Done,2,3
+EPIC-00699,Build Billing endpoint,CAP-0086,Team Orion,D. Singh,P2,21,2025-06-12,2025-06-30,2025-06-30,18,Done,10,4
+EPIC-00700,Integrate Billing ingestion job,CAP-0086,Team Nova,M. Patel,P1,21,2025-06-12,2025-08-09,2025-08-14,63,Done,14,3
+EPIC-00701,Build Billing batch job,CAP-0086,Team Orion,A. Johnson,P3,13,2025-06-13,2025-07-05,,24,Blocked,2,4
+EPIC-00702,Integrate Billing endpoint,CAP-0086,Team Phoenix,D. Singh,P0,3,2025-07-14,2025-09-01,,61,Not Started,10,4
+EPIC-00703,Decommission Billing dashboard,CAP-0086,Team Cygnus,R. Kumar,P2,13,2025-05-17,2025-07-03,,45,In Review,6,2
+EPIC-00704,Automate Billing endpoint,CAP-0086,Team Phoenix,M. Patel,P3,3,2025-05-24,2025-07-14,,51,In Review,4,4
+EPIC-00705,Decommission Billing dashboard,CAP-0086,Team Atlas,P. Wong,P2,13,2025-05-19,2025-06-04,,16,In Review,10,4
+EPIC-00706,Automate Billing batch job,CAP-0086,Team Nova,P. Wong,P3,13,2025-07-07,2025-08-28,,65,In Progress,9,1
+EPIC-00707,Implement API event consumer,CAP-0087,Team Cygnus,L. Nguyen,P0,13,2025-06-15,2025-08-10,,58,In Progress,7,3
+EPIC-00708,Integrate API service,CAP-0087,Team Lyra,R. Kumar,P0,21,2025-07-01,2025-07-25,,30,Blocked,11,0
+EPIC-00709,Migrate API auth flow,CAP-0087,Team Atlas,P. Wong,P0,3,2025-06-10,2025-07-30,,53,Blocked,4,4
+EPIC-00710,Implement API dashboard,CAP-0087,Team Orion,L. Nguyen,P3,21,2025-06-26,2025-07-23,2025-07-22,26,Done,2,4
+EPIC-00711,Build API event consumer,CAP-0087,Team Phoenix,D. Singh,P0,21,2025-07-05,2025-07-20,2025-07-23,18,Done,3,4
+EPIC-00712,Build API dashboard,CAP-0087,Team Cygnus,M. Patel,P1,8,2025-05-12,2025-06-02,,23,In Progress,5,4
+EPIC-00713,Refactor Settlement ingestion job,CAP-0088,Team Orion,M. Patel,P0,3,2025-07-02,2025-07-26,,30,Blocked,6,0
+EPIC-00714,Build Settlement service,CAP-0088,Team Lyra,J. Chen,P0,5,2025-06-09,2025-07-02,,23,In Review,7,2
+EPIC-00715,Automate Settlement auth flow,CAP-0088,Team Vega,R. Kumar,P0,8,2025-06-26,2025-07-25,2025-07-25,29,Done,2,4
+EPIC-00716,Decommission Settlement ingestion job,CAP-0088,Team Nova,J. Chen,P1,21,2025-05-24,2025-07-07,,41,Not Started,5,1
+EPIC-00717,Refactor Settlement auth flow,CAP-0088,Team Orion,M. Patel,P2,21,2025-06-15,2025-07-27,,40,In Progress,13,4
+EPIC-00718,Decommission Billing ingestion job,CAP-0089,Team Vega,P. Wong,P2,5,2025-08-20,2025-10-08,,61,Not Started,1,3
+EPIC-00719,Implement Billing ingestion job,CAP-0089,Team Phoenix,A. Johnson,P2,3,2025-07-10,2025-08-31,2025-09-13,65,Done,6,4
+EPIC-00720,Integrate Billing auth flow,CAP-0089,Team Orion,J. Chen,P1,21,2025-07-29,2025-08-16,,22,Not Started,7,2
+EPIC-00721,Build Billing endpoint,CAP-0089,Team Lyra,R. Kumar,P3,8,2025-08-01,2025-09-16,,57,In Review,11,2
+EPIC-00722,Integrate Billing dashboard,CAP-0089,Team Vega,S. Rai,P1,3,2025-07-14,2025-08-10,,33,Blocked,6,3
+EPIC-00723,Implement Billing service,CAP-0089,Team Nova,P. Wong,P3,21,2025-08-05,2025-08-30,,31,Blocked,12,3
+EPIC-00724,Decommission Settlement service,CAP-0090,Team Atlas,D. Singh,P2,13,2025-10-25,2025-12-20,,56,In Review,14,0
+EPIC-00725,Automate Settlement event consumer,CAP-0090,Team Orion,A. Johnson,P3,3,2025-10-19,2025-12-16,2025-12-21,63,Done,6,0
+EPIC-00726,Integrate Settlement service,CAP-0090,Team Vega,R. Kumar,P1,5,2025-10-16,2025-11-16,,32,In Progress,2,2
+EPIC-00727,Refactor Settlement service,CAP-0090,Team Nova,A. Johnson,P3,3,2025-09-15,2025-10-30,,56,In Progress,1,4
+EPIC-00728,Decommission Settlement auth flow,CAP-0090,Team Lyra,M. Patel,P0,21,2025-09-29,2025-10-23,,30,In Progress,11,4
+EPIC-00729,Migrate Order dashboard,CAP-0091,Team Atlas,S. Rai,P2,21,2025-12-13,2026-02-01,,53,In Review,4,4
+EPIC-00730,Implement Order ingestion job,CAP-0091,Team Nova,D. Singh,P2,3,2025-11-25,2026-01-21,,62,In Review,7,0
+EPIC-00731,Build Order dashboard,CAP-0091,Team Nova,D. Singh,P3,8,2025-11-17,2025-12-03,,17,Not Started,5,1
+EPIC-00732,Build Order endpoint,CAP-0091,Team Phoenix,D. Singh,P0,5,2025-11-05,2025-11-24,,20,In Progress,12,0
+EPIC-00733,Migrate Order dashboard,CAP-0091,Team Vega,D. Singh,P0,21,2025-11-03,2025-11-21,,18,Not Started,8,0
+EPIC-00734,Automate Order dashboard,CAP-0091,Team Cygnus,L. Nguyen,P1,3,2025-10-30,2025-11-19,,20,Not Started,14,2
+EPIC-00735,Integrate Provisioning ingestion job,CAP-0092,Team Atlas,D. Singh,P2,3,2025-08-12,2025-09-02,,26,Not Started,1,0
+EPIC-00736,Implement Provisioning event consumer,CAP-0092,Team Orion,D. Singh,P0,3,2025-08-03,2025-08-20,,21,Blocked,11,2
+EPIC-00737,Decommission Provisioning service,CAP-0092,Team Phoenix,D. Singh,P1,21,2025-07-24,2025-08-31,,47,Not Started,10,6
+EPIC-00738,Build Provisioning ingestion job,CAP-0092,Team Phoenix,L. Nguyen,P0,13,2025-08-04,2025-09-14,,51,Blocked,2,8
+EPIC-00739,Decommission Provisioning endpoint,CAP-0092,Team Cygnus,J. Chen,P1,21,2025-07-12,2025-08-01,,25,Blocked,12,0
+EPIC-00740,Integrate Provisioning auth flow,CAP-0092,Team Orion,P. Wong,P1,5,2025-07-22,2025-08-27,2025-09-05,45,Done,12,3
+EPIC-00741,Automate Provisioning service,CAP-0092,Team Orion,L. Nguyen,P2,21,2025-07-09,2025-07-31,,27,Blocked,7,2
+EPIC-00742,Migrate Provisioning ingestion job,CAP-0092,Team Orion,S. Rai,P1,3,2025-07-25,2025-09-15,,65,In Review,6,2
+EPIC-00743,Decommission Provisioning event consumer,CAP-0092,Team Vega,A. Johnson,P1,5,2025-08-28,2025-10-16,2025-10-28,61,Done,6,0
+EPIC-00744,Refactor Provisioning endpoint,CAP-0092,Team Atlas,L. Nguyen,P2,21,2025-08-17,2025-09-30,,55,Blocked,12,3
+EPIC-00745,Build Provisioning dashboard,CAP-0092,Team Lyra,A. Johnson,P0,5,2025-07-16,2025-08-05,,25,Not Started,8,3

@@ -116,7 +116,7 @@ This document defines the primary users of the Software Metrics AI Delivery Inte
 
 | Priority | Persona | Rationale |
 |---|---|---|
-| **P0** | EM-01 (Maya) | Highest frequency of use; primary buyer in mid-market |
+| **P0** | EM-01 (Maya) | Highest frequency of use; primary user of the metrics data |
 | **P0** | TPM-01 (Raj) | Strongest pain point around cross-team prediction |
 | **P1** | TL-01 (Alex) | Daily user, but lighter feature surface needed |
 | **P2** | VPE-01 (Priya) | Strategic importance, but lower query volume |

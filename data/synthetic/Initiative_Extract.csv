@@ -1,0 +1,16 @@
+initiative_id,initiative_name,owner,start_date,target_end_date,budget_aud_m,strategic_priority,status
+INIT-001,Fiber Rollout Enterprise,S. Rai,2025-06-13,2026-02-05,37.59,High,On Track
+INIT-002,5G Core Modernization,J. Chen,2025-02-05,2025-09-25,30.34,High,On Track
+INIT-003,Network Modernization,A. Johnson,2025-01-24,2025-11-11,26.26,High,On Track
+INIT-004,Customer Self-Service Platform,D. Singh,2025-06-16,2026-12-07,12.58,Medium,On Track
+INIT-005,Billing System Replatform,D. Singh,2025-02-10,2026-08-01,18.33,High,On Track
+INIT-006,Cloud Migration Wave 2,J. Chen,2025-03-28,2025-11-15,20.24,Medium,At Risk
+INIT-007,Data Platform Unification,S. Rai,2025-06-04,2026-04-15,37.03,High,Delayed
+INIT-008,Field Ops Automation,R. Kumar,2025-01-21,2026-04-28,41.81,Medium,On Track
+INIT-009,Identity & Access Overhaul,S. Rai,2025-06-30,2026-01-31,33.74,Medium,On Track
+INIT-010,Wholesale API Suite,D. Singh,2025-03-01,2025-10-18,15.34,Medium,On Track
+INIT-011,AI Operations Pilot,A. Johnson,2025-04-05,2026-04-01,34.17,High,On Track
+INIT-012,Security Posture Uplift,M. Patel,2025-05-17,2026-03-18,24.19,Medium,On Track
+INIT-013,Observability Standardization,S. Rai,2025-06-25,2026-06-06,12.99,High,At Risk
+INIT-014,Edge Compute Buildout,J. Chen,2025-04-13,2026-02-24,12.13,Medium,On Track
+INIT-015,Partner Integration Hub,D. Singh,2025-06-17,2026-08-26,44.46,Low,On Track
