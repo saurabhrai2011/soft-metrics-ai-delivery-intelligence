@@ -1,0 +1,47 @@
+name: Evals
+
+on:
+  pull_request:
+    branches: [main]
+
+# Lock the auto-issued GITHUB_TOKEN to read-only.
+# The eval job needs nothing more than checking out code.
+permissions:
+  contents: read
+
+jobs:
+  evals:
+    runs-on: ubuntu-latest
+
+    # Secrets are scoped to this Environment.
+    # Configure required-reviewer protection in:
+    #   Settings -> Environments -> evals -> Deployment protection rules
+    # Until a reviewer approves the run, ANTHROPIC_API_KEY is NOT injected
+    # and this job pauses in the "Waiting" state.
+    environment: evals
+
+    steps:
+      - name: Checkout PR code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install eval dependencies
+        run: pip install -r requirements-evals.txt
+
+      - name: Run golden eval set
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/run_evals.py
+
+      - name: Upload scorecard
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-scorecard-pr-${{ github.event.pull_request.number }}
+          path: evals/scorecards/
+          retention-days: 30
