@@ -2,3 +2,7 @@
 .venv/
 __pycache__/
 *.pyc
+
+# Eval run artifacts (the .gitkeep retains the directory)
+evals/scorecards/*.jsonl
+evals/scorecards/*.summary.json
