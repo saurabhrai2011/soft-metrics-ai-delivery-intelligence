@@ -106,6 +106,9 @@ def print_row(r: dict) -> None:
     failed = [name for name, c in r["checks"].items() if not c["pass"]]
     detail = f"  ({', '.join(failed)})" if failed else ""
     print(f"  {r['id']:<4} {r['category']:<22} {status}{detail}")
+    if not r["overall_pass"]:
+        preview = " ".join(r["answer"].split())[:200]
+        print(f"        answer: {preview}")
 
 
 def main() -> int:
