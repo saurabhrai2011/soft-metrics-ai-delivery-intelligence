@@ -1,7 +1,9 @@
 # Minimal dependency set for scripts/run_evals.py in CI.
 # Streamlit and friends are intentionally excluded — the eval runner
 # only needs the agent, its tools, and the synthetic-data loader.
-anthropic
-python-dotenv
-duckdb
-pandas
+# Versions pinned to match local dev: unpinned installs let CI drift
+# onto SDK releases with breaking tool-use schema changes.
+anthropic==0.97.0
+python-dotenv==1.2.2
+duckdb==1.5.3
+pandas==3.0.2
