@@ -41,23 +41,80 @@ c4.metric("Avg epic cycle time", f"{kpis['avg_epic_cycle_days']} d")
 st.divider()
 st.subheader("Patterns to investigate")
 
+slip_df = slip_days_by_initiative(data).reset_index()
+defects_df = defects_per_epic_by_team(data).reset_index()
+stuck_df = stuck_epics_by_capability(data).reset_index()
+cycle_df = cycle_time_by_month(data).reset_index()
+
 cA, cB = st.columns(2)
 with cA:
 	st.markdown("**Initiative slip — avg days past plan**")
-	st.bar_chart(slip_days_by_initiative(data))
+	st.dataframe(
+		slip_df,
+		column_config={
+			"initiative_name": st.column_config.TextColumn("Initiative"),
+			"slip_days": st.column_config.ProgressColumn(
+				"Slip (days)",
+				min_value=0,
+				max_value=float(max(1.0, slip_df["slip_days"].max())),
+				format="%.1f",
+			),
+		},
+		hide_index=True,
+		width="stretch",
+	)
 
 with cB:
 	st.markdown("**Defects per epic, by team**")
-	st.bar_chart(defects_per_epic_by_team(data))
+	st.dataframe(
+		defects_df,
+		column_config={
+			"team": st.column_config.TextColumn("Team"),
+			"avg_defects_per_epic": st.column_config.ProgressColumn(
+				"Defects / epic",
+				min_value=0,
+				max_value=float(max(1.0, defects_df["avg_defects_per_epic"].max())),
+				format="%.2f",
+			),
+		},
+		hide_index=True,
+		width="stretch",
+	)
 
 cC, cD = st.columns(2)
 with cC:
 	st.markdown("**Stuck epics (>14d in current status), by capability**")
-	st.bar_chart(stuck_epics_by_capability(data))
+	st.dataframe(
+		stuck_df,
+		column_config={
+			"capability_name": st.column_config.TextColumn("Capability"),
+			"stuck_epics": st.column_config.ProgressColumn(
+				"Stuck epics",
+				min_value=0,
+				max_value=int(max(1, stuck_df["stuck_epics"].max())),
+				format="%d",
+			),
+		},
+		hide_index=True,
+		width="stretch",
+	)
 
 with cD:
 	st.markdown("**Average epic cycle time by start month**")
-	st.line_chart(cycle_time_by_month(data))
+	st.dataframe(
+		cycle_df,
+		column_config={
+			"month": st.column_config.TextColumn("Month"),
+			"avg_cycle_time_days": st.column_config.ProgressColumn(
+				"Avg cycle time (days)",
+				min_value=0,
+				max_value=float(max(1.0, cycle_df["avg_cycle_time_days"].max())),
+				format="%.1f",
+			),
+		},
+		hide_index=True,
+		width="stretch",
+	)
 
 st.divider()
 st.subheader("Ask the agent")
