@@ -1,3 +1,6 @@
+# Minimal dependency set for scripts/run_evals.py in CI.
+# Streamlit and friends are intentionally excluded — the eval runner
+# only needs the agent, its tools, and the synthetic-data loader.
 anthropic
 python-dotenv
 duckdb
