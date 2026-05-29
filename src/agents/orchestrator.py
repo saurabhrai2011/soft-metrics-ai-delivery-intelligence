@@ -98,7 +98,8 @@ TOOLS = [
 class DeliveryIntelligenceAgent:
     """Claude-driven agent: tool selection happens inside the model, not here."""
 
-    def run(self, question: str, user_id: str | None = None, session_id: str | None = None) -> dict:
+    def run(self, question: str, user_id: str | None = None, session_id: str | None = None,
+            source: str | None = None) -> dict:
         collected_evidence: list[dict] = []
         collected_raw: list[dict] = []
 
@@ -142,6 +143,7 @@ class DeliveryIntelligenceAgent:
             system=SYSTEM_PROMPT,
             user_id=user_id,
             session_id=session_id,
+            source=source,
         )
 
         answer = result["answer"]

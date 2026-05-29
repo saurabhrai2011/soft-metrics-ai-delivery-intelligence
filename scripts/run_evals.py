@@ -131,7 +131,9 @@ def main() -> int:
     for row in rows:
         t0 = time.time()
         try:
-            agent_result = agent.run(row["question"])
+            agent_result = agent.run(
+                row["question"], user_id="eval", session_id=run_path.stem, source="eval"
+            )
         except Exception as e:
             agent_result = {
                 "answer": f"ERROR: {e}",

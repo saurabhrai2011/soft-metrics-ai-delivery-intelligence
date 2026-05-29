@@ -138,6 +138,7 @@ if st.button("Generate answer", type="primary"):
 					question,
 					user_id=user_id or "anonymous",
 					session_id=st.session_state["session_id"],
+					source="ui",
 				)
 
 		st.markdown("### Answer")
