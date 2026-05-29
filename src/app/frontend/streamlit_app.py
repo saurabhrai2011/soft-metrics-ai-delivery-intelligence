@@ -1,5 +1,6 @@
 import sys
 from pathlib import Path
+from uuid import uuid4
 
 import streamlit as st
 from dotenv import load_dotenv
@@ -28,6 +29,10 @@ st.title("AI Delivery Intelligence")
 st.caption(
 	"Grounded analysis of initiatives, capabilities, and epics — every claim cites evidence."
 )
+
+# One Langfuse session per browser session; user identifies themselves in the sidebar.
+st.session_state.setdefault("session_id", uuid4().hex)
+user_id = st.sidebar.text_input("Your identifier (for tracing)", value="anonymous")
 
 data = load_synthetic_data()
 kpis = headline_kpis(data)
@@ -129,7 +134,11 @@ if st.button("Generate answer", type="primary"):
 		st.warning("Type a question first.")
 	else:
 		with st.spinner("Agent is thinking…"):
-			result = answer_question(question)
+			result = answer_question(
+					question,
+					user_id=user_id or "anonymous",
+					session_id=st.session_state["session_id"],
+				)
 
 		st.markdown("### Answer")
 		st.markdown(result["answer"])
