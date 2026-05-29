@@ -4,13 +4,13 @@ from __future__ import annotations
 from pathlib import Path
 import duckdb
 
-DATA_DIR = Path("data/synthetic")
+DATA_DIR = Path(__file__).resolve().parents[3] / "data" / "synthetic"
 MAX_ROWS = 50
 
 _con = duckdb.connect(":memory:")
-_con.execute(f"CREATE VIEW initiatives  AS SELECT * FROM read_csv_auto('{DATA_DIR / 'Initiative_Extract.csv'}')")
-_con.execute(f"CREATE VIEW capabilities AS SELECT * FROM read_csv_auto('{DATA_DIR / 'Capability_Extract.csv'}')")
-_con.execute(f"CREATE VIEW epics        AS SELECT * FROM read_csv_auto('{DATA_DIR / 'Epic_Extract.csv'}')")
+_con.execute(f"CREATE VIEW initiatives  AS SELECT * FROM read_csv_auto('{(DATA_DIR / 'Initiative_Extract.csv').as_posix()}')")
+_con.execute(f"CREATE VIEW capabilities AS SELECT * FROM read_csv_auto('{(DATA_DIR / 'Capability_Extract.csv').as_posix()}')")
+_con.execute(f"CREATE VIEW epics        AS SELECT * FROM read_csv_auto('{(DATA_DIR / 'Epic_Extract.csv').as_posix()}')")
 
 
 def query_metrics(sql: str) -> dict:
