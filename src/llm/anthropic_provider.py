@@ -1,6 +1,7 @@
 """Claude with tool-calling. Single entry point: run_agent()."""
 
 from __future__ import annotations
+import json
 import os
 from contextlib import nullcontext
 from anthropic import Anthropic
@@ -8,6 +9,22 @@ from src.observability.tracing import get_langfuse, propagate_attributes
 
 client = Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-5")
+
+
+def _render_output(content_blocks) -> str:
+    """Flatten an Anthropic response into readable text for the Langfuse generation output.
+
+    Text blocks become the assistant text; tool_use blocks become a compact
+    `[tool_use: name(args)]` marker so the call is still visible without the
+    raw content-block JSON.
+    """
+    parts = []
+    for block in content_blocks:
+        if block.type == "text":
+            parts.append(block.text)
+        elif block.type == "tool_use":
+            parts.append(f"[tool_use: {block.name}({json.dumps(block.input)})]")
+    return "\n".join(parts)
 
 
 def run_agent(user_question: str, tools: list[dict], tool_handlers: dict, system: str,
@@ -45,7 +62,7 @@ def run_agent(user_question: str, tools: list[dict], tool_handlers: dict, system
                 )
                 if lf:
                     lf.update_current_generation(
-                        output=[b.model_dump() for b in resp.content],
+                        output=_render_output(resp.content),
                         usage_details={"input": resp.usage.input_tokens, "output": resp.usage.output_tokens},
                     )
 
