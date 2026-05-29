@@ -11,7 +11,8 @@ MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-5")
 
 
 def run_agent(user_question: str, tools: list[dict], tool_handlers: dict, system: str,
-              max_iters: int = 6, user_id: str | None = None, session_id: str | None = None) -> dict:
+              max_iters: int = 6, user_id: str | None = None, session_id: str | None = None,
+              source: str | None = None) -> dict:
     """
     Run a tool-calling loop. Returns {"answer": str, "trace": list[dict]}.
 
@@ -20,6 +21,7 @@ def run_agent(user_question: str, tools: list[dict], tool_handlers: dict, system
     system:        system prompt
     user_id:       optional Langfuse user identifier for the trace
     session_id:    optional Langfuse session identifier for the trace
+    source:        optional origin label (e.g. "ui", "eval", "cli") added as a Langfuse tag
     """
     lf = get_langfuse()
     observe = lf.start_as_current_observation if lf else lambda **_: nullcontext()
@@ -28,9 +30,10 @@ def run_agent(user_question: str, tools: list[dict], tool_handlers: dict, system
     trace = []
     answer = "Agent did not converge within max_iters."
 
-    # propagate_attributes must be entered before the root span so user/session
+    # propagate_attributes must be entered before the root span so user/session/tags
     # apply to every observation in the trace; no-op when Langfuse is disabled.
-    attrs = (propagate_attributes(trace_name="delivery-agent", user_id=user_id, session_id=session_id)
+    attrs = (propagate_attributes(trace_name="delivery-agent", user_id=user_id, session_id=session_id,
+                                  tags=[source] if source else None)
              if lf else nullcontext())
 
     with attrs, observe(name="delivery-agent", as_type="agent", input={"question": user_question}):
