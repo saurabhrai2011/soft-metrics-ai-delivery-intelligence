@@ -25,6 +25,25 @@ st.set_page_config(
 	layout="wide",
 )
 
+
+def check_access() -> bool:
+	if st.session_state.get("authenticated"):
+		return True
+
+	st.title("🔒 Access required")
+	code = st.text_input("Enter access code", type="password")
+	if st.button("Enter"):
+		if code == st.secrets.get("ACCESS_CODE"):
+			st.session_state["authenticated"] = True
+			st.rerun()
+		else:
+			st.error("Incorrect access code.")
+	return False
+
+
+if not check_access():
+	st.stop()
+
 st.title("AI Delivery Intelligence")
 st.caption(
 	"Grounded analysis of initiatives, capabilities, and epics — every claim cites evidence."
