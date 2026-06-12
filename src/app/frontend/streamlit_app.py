@@ -18,6 +18,7 @@ from src.services.metrics_service import (
 	cycle_time_by_month,
 )
 from src.rag.pipeline import answer_question
+from src.personal.profile_qa import answer_about_me, load_documents
 
 
 st.set_page_config(
@@ -53,19 +54,63 @@ st.caption(
 st.session_state.setdefault("session_id", uuid4().hex)
 user_id = "SR"
 
+def _nav_button(label: str) -> None:
+	if st.sidebar.button(
+		label,
+		width="stretch",
+		type="primary" if st.session_state["section"] == label else "secondary",
+	):
+		st.session_state["section"] = label
+
+
 st.sidebar.header("Navigation")
 st.session_state.setdefault("section", "Overview")
 for _label in ("Overview", "Ask the agent", "About"):
-	if st.sidebar.button(
-		_label,
-		width="stretch",
-		type="primary" if st.session_state["section"] == _label else "secondary",
-	):
-		st.session_state["section"] = _label
+	_nav_button(_label)
+
+st.sidebar.divider()
+_nav_button("About Saurabh")
+
 section = st.session_state["section"]
 
 data = load_synthetic_data()
 kpis = headline_kpis(data)
+
+if section == "About Saurabh":
+	st.subheader("About Saurabh")
+	st.caption("Ask anything — answers are grounded in my resume, cover letter, and related documents.")
+
+	docs = load_documents()
+	if not docs:
+		st.info(
+			"No personal documents found yet. Add your resume, cover letter, or other "
+			"files (PDF, DOCX, TXT, or Markdown) to `data/personal/` to enable this."
+		)
+		st.stop()
+
+	st.caption("Loaded: " + ", ".join(docs))
+
+	about_question = st.text_input(
+		"Question about me",
+		placeholder="e.g. what is their experience with AI systems?",
+		key="about_me_question",
+	)
+
+	if st.button("Ask", type="primary"):
+		if not about_question.strip():
+			st.warning("Type a question first.")
+		else:
+			with st.spinner("Thinking…"):
+				answer = answer_about_me(
+					about_question,
+					docs,
+					user_id=user_id,
+					session_id=st.session_state["session_id"],
+					source="ui",
+				)
+			st.markdown("### Answer")
+			st.markdown(answer)
+	st.stop()
 
 if section == "About":
 	st.subheader("About")
