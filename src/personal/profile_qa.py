@@ -48,11 +48,22 @@ def _read_text(path: Path) -> str:
     return path.read_text(encoding="utf-8", errors="replace")
 
 
+def _read_xlsx(path: Path) -> str:
+    import pandas as pd
+
+    sheets = pd.read_excel(path, sheet_name=None)  # all sheets
+    parts = []
+    for name, df in sheets.items():
+        parts.append(f"[Sheet: {name}]\n{df.to_csv(index=False)}")
+    return "\n\n".join(parts)
+
+
 _READERS = {
     ".pdf": _read_pdf,
     ".docx": _read_docx,
     ".txt": _read_text,
     ".md": _read_text,
+    ".xlsx": _read_xlsx,
 }
 
 
