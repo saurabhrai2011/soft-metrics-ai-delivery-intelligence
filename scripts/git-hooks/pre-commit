@@ -1,0 +1,28 @@
+#!/bin/sh
+# Encrypt personal documents before each commit and stage the .enc blobs, so the
+# plaintext never reaches the public repo. Enabled via:  git config core.hooksPath scripts/git-hooks
+set -e
+
+ROOT="$(git rev-parse --show-toplevel)"
+
+# Guard: never let a plaintext personal document into a commit (they should be gitignored).
+staged_plain=$(git diff --cached --name-only --diff-filter=ACM \
+  | grep -E '^data/personal/.*\.(pdf|docx|xlsx|txt|md)$' \
+  | grep -vE '/README\.md$' || true)
+if [ -n "$staged_plain" ]; then
+  echo "pre-commit: refusing to commit plaintext personal documents:" >&2
+  echo "$staged_plain" >&2
+  echo "These must stay local. Unstage them: git restore --staged <file>" >&2
+  exit 1
+fi
+
+# Pick the project interpreter (Windows venv, POSIX venv, or system python).
+if [ -x "$ROOT/.venv/Scripts/python.exe" ]; then PY="$ROOT/.venv/Scripts/python.exe"
+elif [ -x "$ROOT/.venv/bin/python" ]; then PY="$ROOT/.venv/bin/python"
+else PY=python
+fi
+
+"$PY" "$ROOT/scripts/encrypt_personal_docs.py"
+
+# Stage any added/updated/removed .enc blobs (ignored plaintext is skipped automatically).
+git add -A "$ROOT/data/personal"

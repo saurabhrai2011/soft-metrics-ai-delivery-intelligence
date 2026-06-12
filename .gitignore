@@ -1,6 +1,11 @@
 .env
 .venv/
 .streamlit/secrets.toml
+
+# Personal documents: keep only the encrypted .enc blobs in the repo, never plaintext
+data/personal/*
+!data/personal/*.enc
+!data/personal/README.md
 __pycache__/
 *.pyc
 

@@ -1,13 +1,19 @@
 """Answer questions about the owner from their personal documents (resume, cover letter, etc.).
 
-Documents live in ``data/personal/`` as PDF, DOCX, TXT, or Markdown. Their text is
-loaded into a single Claude system prompt — no vector store, since a handful of
-personal documents fit comfortably in context.
+Documents live in ``data/personal/`` as PDF, DOCX, XLSX, TXT, or Markdown. To keep them
+out of the public repo, the committed copies are Fernet-encrypted ``<name>.enc`` blobs;
+the plaintext originals stay local (gitignored). At load time ``.enc`` files are decrypted
+in memory using ``PERSONAL_DOCS_KEY``. Plaintext originals, when present locally, take
+precedence so local edits show up without re-encrypting.
+
+Their text is loaded into a single Claude system prompt — no vector store, since a handful
+of personal documents fit comfortably in context.
 """
 from __future__ import annotations
 
 import os
 from contextlib import nullcontext
+from io import BytesIO
 from pathlib import Path
 
 from anthropic import Anthropic
@@ -30,28 +36,28 @@ SYSTEM_PROMPT = (
 )
 
 
-def _read_pdf(path: Path) -> str:
+def _read_pdf(data: bytes) -> str:
     from pypdf import PdfReader
 
-    reader = PdfReader(str(path))
+    reader = PdfReader(BytesIO(data))
     return "\n".join((page.extract_text() or "") for page in reader.pages)
 
 
-def _read_docx(path: Path) -> str:
+def _read_docx(data: bytes) -> str:
     from docx import Document
 
-    doc = Document(str(path))
+    doc = Document(BytesIO(data))
     return "\n".join(p.text for p in doc.paragraphs)
 
 
-def _read_text(path: Path) -> str:
-    return path.read_text(encoding="utf-8", errors="replace")
+def _read_text(data: bytes) -> str:
+    return data.decode("utf-8", errors="replace")
 
 
-def _read_xlsx(path: Path) -> str:
+def _read_xlsx(data: bytes) -> str:
     import pandas as pd
 
-    sheets = pd.read_excel(path, sheet_name=None)  # all sheets
+    sheets = pd.read_excel(BytesIO(data), sheet_name=None)  # all sheets
     parts = []
     for name, df in sheets.items():
         parts.append(f"[Sheet: {name}]\n{df.to_csv(index=False)}")
@@ -67,23 +73,57 @@ _READERS = {
 }
 
 
-def load_documents(docs_dir: Path = DOCS_DIR) -> dict[str, str]:
-    """Return {filename: extracted_text} for every supported document in docs_dir."""
+def _decrypt(blob: bytes, key: str) -> bytes:
+    from cryptography.fernet import Fernet
+
+    return Fernet(key.encode()).decrypt(blob)
+
+
+def _extract(reader, get_bytes, name: str) -> str:
+    """Run a reader over lazily-fetched bytes, turning any failure into inline text."""
+    try:
+        return reader(get_bytes()).strip()
+    except Exception as e:  # a single unreadable/undecryptable file shouldn't break the page
+        return f"[Could not read {name}: {e}]"
+
+
+def load_documents(docs_dir: Path = DOCS_DIR, key: str | None = None) -> dict[str, str]:
+    """Return {filename: extracted_text} for every supported document in docs_dir.
+
+    Reads plaintext originals when present (local dev) and falls back to decrypting the
+    committed ``<name>.enc`` blobs. ``key`` defaults to the ``PERSONAL_DOCS_KEY`` env var.
+    """
     if not docs_dir.exists():
         return {}
+    key = key or os.environ.get("PERSONAL_DOCS_KEY")
     out: dict[str, str] = {}
+
+    # Plaintext originals first — these win over their encrypted counterparts.
     for path in sorted(docs_dir.iterdir()):
-        if path.stem.lower() == "readme":  # folder instructions, not a personal doc
+        if path.suffix.lower() == ".enc" or path.stem.lower() == "readme":
             continue
         reader = _READERS.get(path.suffix.lower())
         if not reader:
             continue
-        try:
-            text = reader(path).strip()
-        except Exception as e:  # a single unreadable file shouldn't break the page
-            text = f"[Could not read {path.name}: {e}]"
+        text = _extract(reader, path.read_bytes, path.name)
         if text:
             out[path.name] = text
+
+    # Encrypted blobs — only for docs whose plaintext isn't present locally.
+    for path in sorted(docs_dir.iterdir()):
+        if path.suffix.lower() != ".enc":
+            continue
+        inner = Path(path.stem)  # e.g. "SaurabhRai_Resume.docx.enc" -> "SaurabhRai_Resume.docx"
+        reader = _READERS.get(inner.suffix.lower())
+        if not reader or inner.name in out:
+            continue
+        if not key:
+            out[inner.name] = "[Encrypted document — PERSONAL_DOCS_KEY not configured]"
+            continue
+        text = _extract(reader, lambda p=path: _decrypt(p.read_bytes(), key), inner.name)
+        if text:
+            out[inner.name] = text
+
     return out
 
 

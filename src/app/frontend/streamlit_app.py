@@ -80,7 +80,7 @@ if section == "About Saurabh":
 	st.subheader("About Saurabh")
 	st.caption("Ask anything — answers are grounded in my resume, cover letter, and related documents.")
 
-	docs = load_documents()
+	docs = load_documents(key=st.secrets.get("PERSONAL_DOCS_KEY"))
 	if not docs:
 		st.info(
 			"No personal documents found yet. Add your resume, cover letter, or other "

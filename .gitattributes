@@ -1,0 +1,5 @@
+# Git hooks must keep LF endings or the shebang breaks on checkout.
+scripts/git-hooks/* text eol=lf
+
+# Encrypted blobs are binary — never apply line-ending or text filters.
+data/personal/*.enc binary
